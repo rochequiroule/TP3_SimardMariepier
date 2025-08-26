@@ -7,35 +7,45 @@
   "background_color": "#ffffff",
   "theme_color": "#000000",
   "orientation": "portrait",
+  "screenshots": [
+    {
+      "src": "/TP3_SimardMariepier/image/icons/980x980_chaise-icone.jpg",
+      "sizes": "320x320",
+      "type": "image/jpg",
+      "form_factor": "wide",
+      "label": "La meilleure chaise",
+      "description": "Compress and compare images with different codecs right in your browser."
+    }
+  ],
   "icons": [
     {
       "purpose": "maskable",
       "sizes": "48x48",
-      "src": "/TP3_SimardMariepier/image/maskable_icon_x48.png",
+      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_x48.png",
       "type": "image/png"
     },
     {
       "purpose": "maskable",
       "sizes": "72x72",
-      "src": "/TP3_SimardMariepier/image/maskable_icon_x72.png",
+      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_x72.png",
       "type": "image/png"
     },
     {
       "purpose": "maskable",
       "sizes": "96x96",
-      "src": "/TP3_SimardMariepier/image/maskable_icon_x96.png",
+      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_x96.png",
       "type": "image/png"
     },
     {
       "purpose": "maskable",
       "sizes": "128x128",
-      "src": "/TP3_SimardMariepier/image/maskable_icon_x128.png",
+      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_x128.png",
       "type": "image/png"
     },
     {
       "purpose": "maskable",
       "sizes": "192x192",
-      "src": "/TP3_SimardMariepier/image/maskable_icon_x192.png",
+      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_x192.png",
       "type": "image/png"
     }
   ]
