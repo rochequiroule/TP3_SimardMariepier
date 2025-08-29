@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "@tailwindplus/elements": "^1.0.10"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.12"
+  },
+  "name": "tp3_simardmariepier",
+  "version": "1.0.0",
+  "description": "Travail finale réalisé dans le cadre du cours **Technique d'intégration des interfaces Web 2**.   Ce projet met en pratique l'utilisation de **Git**, **SASS**, **Tailwind CSS** (grille et composants).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rochequiroule/TP3_SimardMariepier.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rochequiroule/TP3_SimardMariepier/issues"
+  },
+  "homepage": "https://github.com/rochequiroule/TP3_SimardMariepier#readme"
+}
