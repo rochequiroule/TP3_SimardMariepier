@@ -5,6 +5,7 @@ installButton.addEventListener("click", installPWA);
 window.addEventListener("beforeinstallprompt", saveBeforeInstallPromptEvent);
 
 function saveBeforeInstallPromptEvent(evt) {
+  console.log("beforeinstallprompt event fired!", evt);
   // CODELAB: Add code to save event & show the install button.
   deferredInstallPrompt = evt;
   installButton.removeAttribute("hidden");
