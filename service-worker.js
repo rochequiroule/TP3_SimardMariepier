@@ -1,8 +1,8 @@
 // Nom du cache — change ce nom si tu veux forcer une mise à jour
-const CACHE_NAME = "static-cache-v2";
+const CACHE_NAME = "static-cache-v3";
 
 // Fichiers à mettre en cache au moment de l’installation
-const FILES_TO_CACHE = ["/TP3_SimardMariepier/offline.html", "/TP3_SimardMariepier/index.html", "/TP3_SimardMariepier/css/style.css"];
+const FILES_TO_CACHE = ["/TP3_SimardMariepier/offline.html", "/TP3_SimardMariepier/index.html", "/TP3_SimardMariepier/style/css/style.css"];
 
 // INSTALL
 self.addEventListener("install", (evt) => {
