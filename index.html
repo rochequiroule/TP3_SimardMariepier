@@ -12,7 +12,9 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script/animations.js"></script>
     <script>
-      AOS.init();
+      document.addEventListener("DOMContentLoaded", () => {
+        AOS.init();
+      });
     </script>
     <script>
       if ("serviceWorker" in navigator) {

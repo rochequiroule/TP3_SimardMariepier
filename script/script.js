@@ -1,1 +1,1 @@
-import "@tailwindplus/elements";
+import "https://cdn.skypack.dev/@tailwindplus/elements";
