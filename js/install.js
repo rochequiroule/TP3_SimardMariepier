@@ -26,7 +26,6 @@ function installPWA(evt) {
   });
 }
 
-//page 3
 // Add event listener for appinstalled event
 window.addEventListener("appinstalled", logAppInstalled);
 

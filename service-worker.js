@@ -1,5 +1,5 @@
 // Nom du cache — change ce nom si tu veux forcer une mise à jour
-const CACHE_NAME = "static-cache-v4";
+const CACHE_NAME = "static-cache-v5";
 
 // Fichiers à mettre en cache au moment de l’installation
 const FILES_TO_CACHE = ["/TP3_SimardMariepier/offline.html", "/TP3_SimardMariepier/index.html", "/TP3_SimardMariepier/style/css/style.css"];
@@ -35,7 +35,7 @@ self.addEventListener("activate", (evt) => {
 });
 
 // FETCH
-self.addEventListener("fetch", (evt) => {
+self.addEventListener("fetch", async (evt) => {
   console.log("[ServiceWorker] Fetch", evt.request.url);
 
   if (evt.request.mode !== "navigate") {
@@ -43,7 +43,7 @@ self.addEventListener("fetch", (evt) => {
   }
 
   evt.respondWith(
-    fetch(evt.request).catch(() => {
+    fetch(evt.request).catch(async () => {
       return caches.open(CACHE_NAME).then((cache) => {
         return cache.match("/rochequiroule/TP3_SimardMariepier/offline.html");
       });
