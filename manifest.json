@@ -2,7 +2,7 @@
   "name": "TP3 - Travail Final",
   "short_name": "TP3",
   "description": "Travail pratique 3 - Travail Final",
-  "start_url": "./index.html",
+  "start_url": "./TP3_SimardMariepier/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",

@@ -1,3 +1,10 @@
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("/TP3_SimardMariepier/sw.js")
+    .then(() => console.log("Service Worker Registered"))
+    .catch((err) => console.log("Service Worker registration failed", err));
+}
+
 let deferredInstallPrompt = null;
 const installButton = document.getElementById("butInstall");
 installButton.addEventListener("click", installPWA);
@@ -9,6 +16,12 @@ function saveBeforeInstallPromptEvent(evt) {
   deferredInstallPrompt = evt;
   installButton.removeAttribute("hidden");
 }
+
+window.addEventListener("beforeinstallprompt", (evt) => {
+  console.log("beforeinstallprompt fired!", evt);
+  deferredInstallPrompt = evt;
+  installButton.removeAttribute("hidden");
+});
 
 function installPWA(evt) {
   // Add code show install prompt & hide the install button.

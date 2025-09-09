@@ -1,5 +1,5 @@
 // Nom du cache — change ce nom si tu veux forcer une mise à jour
-const CACHE_NAME = "static-cache-v6";
+const CACHE_NAME = "static-cache-v7";
 
 // Fichiers à mettre en cache au moment de l’installation
 const FILES_TO_CACHE = ["/TP3_SimardMariepier/offline.html", "/TP3_SimardMariepier/index.html", "/TP3_SimardMariepier/style/css/style.css"];
@@ -45,7 +45,7 @@ self.addEventListener("fetch", async (evt) => {
   evt.respondWith(
     fetch(evt.request).catch(async () => {
       return caches.open(CACHE_NAME).then((cache) => {
-        return cache.match("/rochequiroule/TP3_SimardMariepier/offline.html");
+        return cache.match("/TP3_SimardMariepier/offline.html");
       });
     })
   );
