@@ -10,16 +10,12 @@
     <link rel="stylesheet" href="style/css/style.css" />
     <link rel="manifest" href="manifest.json" />
     <script>
+      // Register service worker.
       if ("serviceWorker" in navigator) {
-        window.addEventListener("load", function () {
-          navigator.serviceWorker
-            .register("/service-worker.js")
-            .then(function (registration) {
-              console.log("Service Worker registration successful with scope: ", registration.scope);
-            })
-            .catch(function (error) {
-              console.log("Service Worker registration failed:", error);
-            });
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("script/service-worker.js").then((reg) => {
+            console.log("Service worker registered.", reg);
+          });
         });
       }
     </script>
@@ -46,6 +42,7 @@
               <div class="flex shrink-0 items-center">
                 <img src="image/ReBois_logo.svg" alt="Your Company" class="h-8 w-auto" />
               </div>
+              <button class="nav-link px-lg-4 px-2" id="butInstall" aria-label="Install" hidden>Installer la PWA</button>
               <div class="hidden sm:ml-6 sm:block">
                 <div class="flex space-x-4">
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
@@ -205,6 +202,7 @@
     <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/dropdown.js"></script>
     <script src="script/animations.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script/install.js"></script>
     <script>
       AOS.init();
     </script>
