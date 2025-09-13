@@ -1,0 +1,15 @@
+/* validation du formulaire*/
+.success {
+  border-color: #089f5b;
+}
+
+.error {
+  border-color: #d84242;
+}
+
+.form--errorMessage {
+  color: #d84242;
+  font-size: 12px;
+  margin-bottom: 5px;
+  height: 22px;
+}

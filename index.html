@@ -8,8 +8,6 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <link rel="stylesheet" href="style/css/style.css" />
     <link rel="manifest" href="manifest.json" />
-    <script src="script/animations.js"></script>
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <script>
@@ -166,8 +164,8 @@
       </section>
       <section data-aos="fade-up">
         <div class="bg-[#D8D5BF] py-24 sm:py-32">
-          <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto max-w-2xl lg:text-center">
+          <div class="mx-auto flex flex-col items-center max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-5xl lg:text-center">
               <h2 class="text-base/7 font-semibold text-black-400">Redonner vie à vos meubles, c’est notre métier.</h2>
               <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-black sm:text-5xl lg:text-balance">Nos services de restauration et de personnalisation</p>
               <p class="mt-6 text-lg/8 text-black-300">Nous traitons chaque meuble avec respect et passion. Que vous souhaitiez raviver une pièce ancienne, réparer un élément abîmé ou transformer complètement un meuble pour l’adapter à votre intérieur, nous avons la solution. Découvrez nos quatre principaux services, pensés pour offrir à vos meubles une seconde vie.</p>
@@ -220,29 +218,28 @@
                 </div>
               </dl>
             </div>
-            <button type="submit" class="h-12 rounded-sm bg-[#CF755A] px-12 py-3 text-sm font-medium text-white hover:bg-[#D8D5BF] hover:text-black focus:ring-3 focus:outline-hidden">S'inscrire</button>
+            <button class="h-12 w-70 rounded-sm bg-[#CF755A] px-12 py-3 mt-15 text-sm font-medium text-white hover:bg-[#D8D5BF] hover:text-black focus:ring-3 focus:outline-hidden">S'inscrire</button>
           </div>
         </div>
       </section>
 
       <section>
         <div class="bg-[#AEC1BA] py-20">
-          <div class="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
             <div class="mx-auto max-w-prose text-center">
               <h2 class="text-2xl font-semibold text-gray-900 sm:text-3xl">Restez inspiré·e</h2>
 
               <p class="mt-4 text-gray-700">Abonnez-vous à notre infolettre et découvrez nos conseils d’entretien, nos projets de restauration et des idées déco pour donner une seconde vie à vos meubles.</p>
             </div>
-
-            <form action="#" class="mx-auto mt-6 flex max-w-xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-center">
-              <label for="Email" class="flex-1 hover:border-[CF755A] rounded">
+            <form class="mx-auto mt-6 flex max-w-xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-center" novalidate>
+              <label for="email" class="flex-1 hover:border-[CF755A] rounded">
                 <span class="sr-only"> Courriel </span>
-
-                <input type="email" id="Email" placeholder="Entrez votre courriel" class="bg-gray-100 h-12 w-full rounded border border-gray-400 pl-4 shadow-lg" />
               </label>
+              <input id="email" name="email" type="email" placeholder="Entrez votre courriel" class="bg-gray-100 h-10 w-200 rounded border border-gray-400 pl-4 shadow-lg" required />
 
-              <button type="submit" class="h-12 rounded-sm bg-[#CF755A] px-12 py-3 text-sm font-medium text-white hover:bg-[#D8D5BF] hover:text-black focus:ring-3 focus:outline-hidden">S'inscrire</button>
+              <button type="submit" class="bg-[#dab835] hover:bg-white font-bold py-2 px-4 rounded">S’inscrire</button>
             </form>
+            <div class="form--errorMessage mt-5 mb-10"></div>
           </div>
         </div>
       </section>
@@ -322,6 +319,8 @@
     <script src="https://unpkg.com/@material-tailwind/html@latest"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/install.js"></script>
+    <script src="script/validation.js"></script>
+    <script src="script/animations.js"></script>
     <script>
       AOS.init();
     </script>
