@@ -220,24 +220,25 @@
                 </div>
               </dl>
             </div>
+            <button type="submit" class="h-12 rounded-sm bg-[#CF755A] px-12 py-3 text-sm font-medium text-white hover:bg-[#D8D5BF] hover:text-black focus:ring-3 focus:outline-hidden">S'inscrire</button>
           </div>
         </div>
       </section>
 
-      <section data-aos="fade-up">
+      <section>
         <div class="bg-[#AEC1BA] py-20">
           <div class="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">
             <div class="mx-auto max-w-prose text-center">
-              <h2 class="text-2xl font-semibold text-gray-900 sm:text-3xl">Abonnez-vous à notre infolettre</h2>
+              <h2 class="text-2xl font-semibold text-gray-900 sm:text-3xl">Restez inspiré·e</h2>
 
-              <p class="mt-4 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur doloremque saepe architecto maiores repudiandae amet perferendis repellendus, reprehenderit voluptas sequi.</p>
+              <p class="mt-4 text-gray-700">Abonnez-vous à notre infolettre et découvrez nos conseils d’entretien, nos projets de restauration et des idées déco pour donner une seconde vie à vos meubles.</p>
             </div>
 
             <form action="#" class="mx-auto mt-6 flex max-w-xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-center">
               <label for="Email" class="flex-1 hover:border-[CF755A] rounded">
-                <span class="sr-only"> Email </span>
+                <span class="sr-only"> Courriel </span>
 
-                <input type="email" id="Email" placeholder="Enter your email" class="bg-gray-100 h-12 w-full rounded border border-gray-400 pl-4 shadow-lg" />
+                <input type="email" id="Email" placeholder="Entrez votre courriel" class="bg-gray-100 h-12 w-full rounded border border-gray-400 pl-4 shadow-lg" />
               </label>
 
               <button type="submit" class="h-12 rounded-sm bg-[#CF755A] px-12 py-3 text-sm font-medium text-white hover:bg-[#D8D5BF] hover:text-black focus:ring-3 focus:outline-hidden">S'inscrire</button>
@@ -247,27 +248,56 @@
       </section>
     </main>
 
-    <footer class="bg-white shadow-sm dark:bg-gray-100">
+    <footer class="bg-white py-10 shadow-sm dark:bg-gray-100">
       <div class="mx-auto max-w-7xl px-2 py-8 sm:px-6 lg:px-8">
         <div class="sm:flex sm:items-center sm:justify-between">
-          <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-            <img src="image/ReBois_logo.svg" alt="Rebois Logo" class="h-8 w-auto" />
-          </a>
-          <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-            <li>
-              <a href="index.html" class="hover:underline me-4 md:me-6">Accueil</a>
-            </li>
-            <li>
-              <a href="realisation.html" class="hover:underline me-4 md:me-6">Réalisation</a>
-            </li>
-
-            <li>
-              <a href="contact.html" class="hover:underline">Contact</a>
-            </li>
-          </ul>
+          <div class="flex flex-col sm:flex-col sm:space-x-6 rtl:space-x-reverse">
+            <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+              <img src="image/ReBois_logo.svg" alt="Rebois Logo" class="h-8 w-auto" />
+            </a>
+            <p class="w-200 py-5">Qu’il s’agisse d’une pièce de famille ou d’une trouvaille unique, nous lui redonnons son éclat avec soin, passion et créativité.</p>
+          </div>
+          <div class="flex gap-10">
+            <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+              <span class="absolute -inset-1.5"></span>
+              <span class="sr-only">View notifications</span>
+              <span class="[&>svg]:h-5 [&>svg]:w-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 320 512">
+                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                  <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                </svg>
+              </span>
+            </button>
+            <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+              <span class="absolute -inset-1.5"></span>
+              <span class="sr-only">View notifications</span>
+              <span class="[&>svg]:h-5 [&>svg]:w-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                  />
+                </svg>
+              </span>
+            </button>
+            <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+              <span class="absolute -inset-1.5"></span>
+              <span class="sr-only">View notifications</span>
+              <span class="[&>svg]:h-5 [&>svg]:w-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512">
+                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                  <path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                </svg>
+              </span>
+            </button>
+          </div>
         </div>
+
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">ReBois</a>. Tous droits réservés.</span>
+        <div class="flex justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">ReBois</a>. </span>
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Tous droits réservés.</span>
+        </div>
       </div>
     </footer>
 
