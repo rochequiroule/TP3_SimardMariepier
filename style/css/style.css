@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* validation du formulaire*/
 .success {
   border-color: #089f5b;
@@ -12,6 +13,19 @@
   font-size: 12px;
   margin-bottom: 5px;
   height: 22px;
+}
+
+/* CSS pour le lien caché */
+.screen-reader-text {
+  border: 0;
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
 }
 
 * {

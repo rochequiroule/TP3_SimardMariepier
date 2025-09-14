@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nous croyons que chaque meuble a une âme et une histoire à raconter. Notre mission est de préserver ce patrimoine tout en lui offrant une seconde vie." />
     <title>TP3 - ReBois</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
@@ -20,212 +21,214 @@
     </script>
   </head>
   <body>
-    <header>
-      <nav class="relative bg-white">
-        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-          <div class="relative flex h-16 items-center justify-between">
-            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-              <!-- Mobile menu button-->
-              <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-black focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
-                <span class="absolute -inset-0.5"></span>
-                <span class="sr-only">Open main menu</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
-                  <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
-                  <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </button>
-            </div>
-            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-              <div class="flex shrink-0 items-center">
-                <img src="image/ReBois_logo.svg" alt="Your Company" class="h-8 w-auto" />
+    <header id="header">
+      <div class="gap-6 max-w-[1900px] w-[80%] mx-auto">
+        <nav class="relative bg-white col-span-12">
+          <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+              <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                <!-- Mobile menu button-->
+                <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-black focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+                  <span class="absolute -inset-0.5"></span>
+                  <span class="sr-only">Open main menu</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                    <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
               </div>
-              <button class="nav-link px-lg-4 px-2" id="butInstall" aria-label="Install" hidden>Installer la PWA</button>
-              <div class="hidden sm:ml-6 sm:block">
-                <div class="flex space-x-4">
-                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-                  <a href="index.html" aria-current="page" class="rounded-md bg-[#CF755A] px-3 py-2 text-sm font-medium text-white">Accueil</a>
-                  <a href="realisation.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-black/5 hover:text-black">Réalisation</a>
-                  <a href="contact.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-black/5 hover:text-black">Contact</a>
+              <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <div class="flex shrink-0 items-center">
+                  <img src="image/ReBois_logo.svg" alt="Your Company" class="h-8 w-auto" />
+                </div>
+                <button class="nav-link px-lg-4 px-2" id="butInstall" aria-label="Install" hidden>Installer la PWA</button>
+                <div class="hidden sm:ml-6 sm:block">
+                  <div class="flex space-x-4">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                    <a href="index.html" aria-current="page" class="rounded-md bg-[#CF755A] px-3 py-2 text-sm font-medium text-white">Accueil</a>
+                    <a href="realisation.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-400 hover:bg-black/5 hover:text-black">Réalisation</a>
+                    <a href="contact.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-400 hover:bg-black/5 hover:text-black">Contact</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-              <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
-                <span class="absolute -inset-1.5"></span>
-                <span class="sr-only">View notifications</span>
-                <span class="[&>svg]:h-5 [&>svg]:w-5">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 320 512">
-                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                    <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
-                  </svg>
-                </span>
-              </button>
-              <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
-                <span class="absolute -inset-1.5"></span>
-                <span class="sr-only">View notifications</span>
-                <span class="[&>svg]:h-5 [&>svg]:w-5">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
-                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                    <path
-                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                    />
-                  </svg>
-                </span>
-              </button>
-              <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
-                <span class="absolute -inset-1.5"></span>
-                <span class="sr-only">View notifications</span>
-                <span class="[&>svg]:h-5 [&>svg]:w-5">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512">
-                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                    <path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
-                  </svg>
-                </span>
-              </button>
+              <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+                  <span class="absolute -inset-1.5"></span>
+                  <span class="sr-only">View notifications</span>
+                  <span class="[&>svg]:h-5 [&>svg]:w-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 320 512">
+                      <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                      <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                    </svg>
+                  </span>
+                </button>
+                <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+                  <span class="absolute -inset-1.5"></span>
+                  <span class="sr-only">View notifications</span>
+                  <span class="[&>svg]:h-5 [&>svg]:w-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                      <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                      <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+                  <span class="absolute -inset-1.5"></span>
+                  <span class="sr-only">View notifications</span>
+                  <span class="[&>svg]:h-5 [&>svg]:w-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512">
+                      <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                      <path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
-          <div class="space-y-1 px-2 pt-2 pb-3">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-            <a href="#" aria-current="page" class="block rounded-md bg-[#CF755A] px-3 py-2 text-base font-medium text-white">Accueil</a>
-            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-black/5 hover:text-black">Réalisation</a>
-            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-black/5 hover:text-black">Contact</a>
-          </div>
-        </el-disclosure>
-      </nav>
+          <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+            <div class="space-y-1 px-2 pt-2 pb-3">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+              <a href="#" aria-current="page" class="block rounded-md bg-[#CF755A] px-3 py-2 text-base font-medium text-white">Accueil</a>
+              <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-black/5 hover:text-black">Réalisation</a>
+              <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-black/5 hover:text-black">Contact</a>
+            </div>
+          </el-disclosure>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section>
-        <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
-          <img src="https://images.unsplash.com/photo-1732801134112-23827e7cbd0d?q=80&w=2904&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="absolute inset-0 -z-10 size-full object-cover object-right md:object-center" />
-          <div aria-hidden="true" class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl">
-            <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="aspect-1097/845 w-274.25 bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-20"></div>
-          </div>
-          <div aria-hidden="true" class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:-top-112 sm:ml-16 sm:translate-x-0">
-            <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="aspect-1097/845 w-274.25 bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-20"></div>
-          </div>
-          <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto max-w-2xl lg:mx-0">
-              <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Donnez une nouvelle vie à vos meubles</h2>
-              <p class="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">Chez Bois & Mémoire, chaque meuble a une histoire. Notre mission est de restaurer vos pièces favorites avec soin, pour qu’elles retrouvent leur éclat et continuent à traverser le temps.</p>
-            </div>
-            <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-              <div class="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-                <a href="#">Nos services <span aria-hidden="true">&rarr;</span></a>
-                <a href="#">Nos réalisations <span aria-hidden="true">&rarr;</span></a>
-                <a href="#">Contactez-nous<span aria-hidden="true">&rarr;</span></a>
-              </div>
-              <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
-                <div class="flex flex-col-reverse gap-1" data-aos="slide-up">
-                  <dt class="text-base/7 text-gray-300">Meubles restaurés</dt>
-                  <dd class="text-4xl font-semibold tracking-tight text-white">100+</dd>
-                </div>
-                <div class="flex flex-col-reverse gap-1" data-aos="slide-up">
-                  <dt class="text-base/7 text-gray-300">Clients satisfaits</dt>
-                  <dd class="text-4xl font-semibold tracking-tight text-white">200+</dd>
-                </div>
-                <div class="flex flex-col-reverse gap-1" data-aos="slide-up">
-                  <dt class="text-base/7 text-gray-300">Années d’expérience</dt>
-                  <dd class="text-4xl font-semibold tracking-tight text-white">10</dd>
-                </div>
-                <div class="flex flex-col-reverse gap-1" data-aos="slide-up">
-                  <dt class="text-base/7 text-gray-300">Passion pour le bois</dt>
-                  <dd class="text-4xl font-semibold tracking-tight text-white">Sans limite</dd>
-                </div>
-              </dl>
-            </div>
-          </div>
+    <main id="main">
+      <a class="screen-reader-text" href="#main">Aller au contenu principal</a>
+      <section class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+        <img src="https://images.unsplash.com/photo-1732801134112-23827e7cbd0d?q=80&w=2904&auto=format&fit=crop&ixlib=rb-4.1.0" alt="" class="absolute inset-0 -z-10 w-full h-full object-cover object-right md:object-center" />
+        <div aria-hidden="true" class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl">
+          <div class="aspect-[1097/845] w-[274.25px] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
         </div>
-      </section>
-      <section>
-        <div class="mx-auto max-w-screen-xl px-4 py-30 sm:px-6 lg:px-8">
-          <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
-            <div>
-              <div class="max-w-prose md:max-w-none">
-                <h2 class="text-2xl font-semibold text-gray-900 sm:text-3xl">Chez ReBois</h2>
-
-                <p class="mt-4 text-gray-700">Nous croyons que chaque meuble a une âme et une histoire à raconter. Notre mission est de préserver ce patrimoine tout en lui offrant une seconde vie. Qu’il s’agisse d’une pièce de famille ou d’une trouvaille unique, nous lui redonnons son éclat avec soin, passion et créativité.</p>
+        <div class="grid grid-cols-12 gap-6 max-w-[1900px] w-[80%] mx-auto">
+          <div class="col-span-12">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+              <div class="mx-auto max-w-2xl lg:mx-0">
+                <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Donnez une nouvelle vie à vos meubles</h2>
+                <p class="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">Chez Bois & Mémoire, chaque meuble a une histoire...</p>
+              </div>
+              <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+                <div class="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+                  <a href="#">Nos services <span aria-hidden="true">&rarr;</span></a>
+                  <a href="#">Nos réalisations <span aria-hidden="true">&rarr;</span></a>
+                  <a href="#">Contactez-nous<span aria-hidden="true">&rarr;</span></a>
+                </div>
+                <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+                  <div class="flex flex-col-reverse gap-1" data-aos="slide-up">
+                    <dt class="text-base/7 text-gray-300">Meubles restaurés</dt>
+                    <dd class="text-4xl font-semibold tracking-tight text-white">100+</dd>
+                  </div>
+                  <div class="flex flex-col-reverse gap-1" data-aos="slide-up">
+                    <dt class="text-base/7 text-gray-300">Clients satisfaits</dt>
+                    <dd class="text-4xl font-semibold tracking-tight text-white">200+</dd>
+                  </div>
+                  <div class="flex flex-col-reverse gap-1" data-aos="slide-up">
+                    <dt class="text-base/7 text-gray-300">Années d’expérience</dt>
+                    <dd class="text-4xl font-semibold tracking-tight text-white">10</dd>
+                  </div>
+                  <div class="flex flex-col-reverse gap-1" data-aos="slide-up">
+                    <dt class="text-base/7 text-gray-300">Passion pour le bois</dt>
+                    <dd class="text-4xl font-semibold tracking-tight text-white">Sans limite</dd>
+                  </div>
+                </dl>
               </div>
             </div>
-
-            <div class="grid grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
-              <img class="col-span-1 rounded-md" data-aos="fade-left" src="https://plus.unsplash.com/premium_photo-1669324450796-11ba2b0295fa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3DD" alt="" />
-              <img class="col-span-1 rounded-md" data-aos="fade-left" src="https://images.unsplash.com/photo-1645743714191-bf033e0c181a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-
-              <img class="col-span-2 rounded-md" data-aos="fade-left" src="https://images.unsplash.com/photo-1644358686685-4ed525a59663?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section data-aos="fade-up">
-        <div class="bg-[#D8D5BF] py-24 sm:py-32">
-          <div class="mx-auto flex flex-col items-center max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto max-w-5xl lg:text-center">
-              <h2 class="text-base/7 font-semibold text-black-400">Redonner vie à vos meubles, c’est notre métier.</h2>
-              <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-black sm:text-5xl lg:text-balance">Nos services de restauration et de personnalisation</p>
-              <p class="mt-6 text-lg/8 text-black-300">Nous traitons chaque meuble avec respect et passion. Que vous souhaitiez raviver une pièce ancienne, réparer un élément abîmé ou transformer complètement un meuble pour l’adapter à votre intérieur, nous avons la solution. Découvrez nos quatre principaux services, pensés pour offrir à vos meubles une seconde vie.</p>
-            </div>
-            <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-              <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-                <div class="relative pl-16">
-                  <dt class="text-base/7 font-semibold text-black">
-                    <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-[#EDEBDF]">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-[#CF755A]">
-                        <path d="M12 16.5V9.75m0 0 3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </div>
-                    Restauration complète
-                  </dt>
-                  <dd class="mt-2 text-base/7 text-[#737373]">Nous redonnons vie aux meubles anciens ou abîmés grâce à un travail minutieux : démontage, réparation, ponçage et finition. Chaque détail est respecté pour conserver l’authenticité de la pièce.</dd>
-                </div>
-                <div class="relative pl-16">
-                  <dt class="text-base/7 font-semibold text-black">
-                    <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-[#EDEBDF]">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-[#CF755A]">
-                        <path d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </div>
-                    Personnalisation sur mesure
-                  </dt>
-                  <dd class="mt-2 text-base/7 text-[#737373]">Vous rêvez d’un meuble unique ? Nous transformons vos pièces selon vos goûts avec des techniques de peinture, de patine ou de teinture adaptées. Votre meuble devient une création qui vous ressemble.</dd>
-                </div>
-                <div class="relative pl-16">
-                  <dt class="text-base/7 font-semibold text-black">
-                    <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-[#EDEBDF]">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-[#CF755A]">
-                        <path d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </div>
-                    Réparation ciblée
-                  </dt>
-                  <dd class="mt-2 text-base/7 text-[#737373]">Un tiroir bloqué ? Un pied cassé ? Une surface endommagée ? Nous effectuons des réparations précises et durables pour prolonger la vie de vos meubles sans altérer leur charme.</dd>
-                </div>
-                <div class="relative pl-16">
-                  <dt class="text-base/7 font-semibold text-black">
-                    <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-[#EDEBDF]">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-[#CF755A]">
-                        <path d="M7.864 4.243A7.5 7.5 0 0 1 19.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 0 0 4.5 10.5a7.464 7.464 0 0 1-1.15 3.993m1.989 3.559A11.209 11.209 0 0 0 8.25 10.5a3.75 3.75 0 1 1 7.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 0 1-3.6 9.75m6.633-4.596a18.666 18.666 0 0 1-2.485 5.33" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </div>
-                    Conseil et accompagnement
-                  </dt>
-                  <dd class="mt-2 text-base/7 text-[#737373]">Au-delà de la restauration, nous vous guidons dans le choix des finitions et vous partageons nos astuces pour entretenir vos meubles. Notre objectif : que vos pièces traversent le temps en beauté..</dd>
-                </div>
-              </dl>
-            </div>
-            <button class="h-12 w-70 rounded-sm bg-[#CF755A] px-12 py-3 mt-15 text-sm font-medium text-white hover:bg-[#D8D5BF] hover:text-black focus:ring-3 focus:outline-hidden">S'inscrire</button>
           </div>
         </div>
       </section>
 
-      <section>
-        <div class="bg-[#AEC1BA] py-20">
-          <div class="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
+      <section id="about-us" class="py-24">
+        <div class="grid grid-cols-12 gap-6 max-w-[1900px] w-[80%] mx-auto">
+          <div class="col-span-12 md:col-span-6 flex items-center">
+            <div class="max-w-prose md:max-w-none">
+              <h2 class="text-2xl font-semibold text-gray-900 sm:text-3xl">Chez ReBois</h2>
+              <p class="mt-4 text-gray-700">Nous croyons que chaque meuble a une âme et une histoire à raconter. Notre mission est de préserver ce patrimoine tout en lui offrant une seconde vie. Qu’il s’agisse d’une pièce de famille ou d’une trouvaille unique, nous lui redonnons son éclat avec soin, passion et créativité.</p>
+            </div>
+          </div>
+
+          <div class="col-span-12 md:col-span-6 grid grid-cols-2 gap-4">
+            <img class="col-span-1 rounded-md" data-aos="fade-left" src="https://plus.unsplash.com/premium_photo-1669324450796-11ba2b0295fa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3DD" alt="" />
+            <img class="col-span-1 rounded-md" data-aos="fade-left" src="https://images.unsplash.com/photo-1645743714191-bf033e0c181a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+
+            <img class="col-span-2 rounded-md" data-aos="fade-left" src="https://images.unsplash.com/photo-1644358686685-4ed525a59663?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="services" data-aos="fade-up" class="bg-[#D8D5BF]">
+        <div class="grid grid-cols-12 gap-6 max-w-[1900px] w-[80%] mx-auto">
+          <div class="col-span-12 py-24 sm:py-32">
+            <div class="mx-auto flex flex-col items-center col-span-8 px-6 lg:px-8">
+              <div class="mx-auto lg:text-center">
+                <h2 class="text-base/7 font-semibold text-black-400">Redonner vie à vos meubles, c’est notre métier.</h2>
+                <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-black sm:text-5xl lg:text-balance">Nos services de restauration et de personnalisation</p>
+                <p class="mt-6 text-lg/8 text-black-300">Nous traitons chaque meuble avec respect et passion. Que vous souhaitiez raviver une pièce ancienne, réparer un élément abîmé ou transformer complètement un meuble pour l’adapter à votre intérieur, nous avons la solution. Découvrez nos quatre principaux services, pensés pour offrir à vos meubles une seconde vie.</p>
+              </div>
+              <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+                <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+                  <div class="relative pl-16">
+                    <dt class="text-base/7 font-semibold text-black">
+                      <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-[#EDEBDF]">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-[#CF755A]">
+                          <path d="M12 16.5V9.75m0 0 3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                      Restauration complète
+                    </dt>
+                    <dd class="mt-2 text-base/7 text-[#737373]">Nous redonnons vie aux meubles anciens ou abîmés grâce à un travail minutieux : démontage, réparation, ponçage et finition. Chaque détail est respecté pour conserver l’authenticité de la pièce.</dd>
+                  </div>
+                  <div class="relative pl-16">
+                    <dt class="text-base/7 font-semibold text-black">
+                      <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-[#EDEBDF]">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-[#CF755A]">
+                          <path d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                      Personnalisation sur mesure
+                    </dt>
+                    <dd class="mt-2 text-base/7 text-[#737373]">Vous rêvez d’un meuble unique ? Nous transformons vos pièces selon vos goûts avec des techniques de peinture, de patine ou de teinture adaptées. Votre meuble devient une création qui vous ressemble.</dd>
+                  </div>
+                  <div class="relative pl-16">
+                    <dt class="text-base/7 font-semibold text-black">
+                      <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-[#EDEBDF]">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-[#CF755A]">
+                          <path d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                      Réparation ciblée
+                    </dt>
+                    <dd class="mt-2 text-base/7 text-[#737373]">Un tiroir bloqué ? Un pied cassé ? Une surface endommagée ? Nous effectuons des réparations précises et durables pour prolonger la vie de vos meubles sans altérer leur charme.</dd>
+                  </div>
+                  <div class="relative pl-16">
+                    <dt class="text-base/7 font-semibold text-black">
+                      <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-[#EDEBDF]">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-[#CF755A]">
+                          <path d="M7.864 4.243A7.5 7.5 0 0 1 19.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 0 0 4.5 10.5a7.464 7.464 0 0 1-1.15 3.993m1.989 3.559A11.209 11.209 0 0 0 8.25 10.5a3.75 3.75 0 1 1 7.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 0 1-3.6 9.75m6.633-4.596a18.666 18.666 0 0 1-2.485 5.33" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                      Conseil et accompagnement
+                    </dt>
+                    <dd class="mt-2 text-base/7 text-[#737373]">Au-delà de la restauration, nous vous guidons dans le choix des finitions et vous partageons nos astuces pour entretenir vos meubles. Notre objectif : que vos pièces traversent le temps en beauté..</dd>
+                  </div>
+                </dl>
+              </div>
+              <button class="h-12 w-70 rounded-sm bg-[#CF755A] px-12 py-3 mt-15 text-sm font-medium text-white hover:bg-[#D8D5BF] hover:text-black focus:ring-3 focus:outline-hidden">S'inscrire</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="infolettre" class="bg-[#AEC1BA] py-20">
+        <div class="grid grid-cols-12 gap-6 max-w-[1900px] w-[80%] mx-auto">
+          <div class="col-span-8 col-start-3 py-10 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
             <div class="mx-auto max-w-prose text-center">
               <h2 class="text-2xl font-semibold text-gray-900 sm:text-3xl">Restez inspiré·e</h2>
 
@@ -235,9 +238,9 @@
               <label for="email" class="flex-1 hover:border-[CF755A] rounded">
                 <span class="sr-only"> Courriel </span>
               </label>
-              <input id="email" name="email" type="email" placeholder="Entrez votre courriel" class="bg-gray-100 h-10 w-200 rounded border border-gray-400 pl-4 shadow-lg" required />
+              <input id="email" name="email" type="email" placeholder="Entrez votre courriel" class="bg-gray-100 h-12 w-200 rounded border border-gray-400 pl-4 shadow-lg" required />
 
-              <button type="submit" class="bg-[#dab835] hover:bg-white font-bold py-2 px-4 rounded">S’inscrire</button>
+              <button type="submit" class="h-12 rounded-sm bg-[#CF755A] px-12 py-3 text-sm font-medium text-white hover:bg-[#D8D5BF] hover:text-black focus:ring-3 focus:outline-hidden">S’inscrire</button>
             </form>
             <div class="form--errorMessage mt-5 mb-10"></div>
           </div>
@@ -292,7 +295,7 @@
 
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="flex justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">ReBois</a>. </span>
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="https://flowbite.com/" class="hover:underline">ReBois</a>. </span>
           <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Tous droits réservés.</span>
         </div>
       </div>
@@ -314,6 +317,8 @@
       <div class="item" data-aos="flip-right">10</div>
       <div class="item" data-aos="flip-left">11</div>
     </section>
+
+    <!-- Script -->
 
     <script type="module" src="script/script.js"></script>
     <script src="https://unpkg.com/@material-tailwind/html@latest"></script>
