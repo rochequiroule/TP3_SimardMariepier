@@ -21,10 +21,10 @@
     </script>
   </head>
   <body>
-    <header id="header">
+    <header id="header" class="">
       <div class="gap-6 max-w-[1900px] w-[80%] mx-auto">
         <nav class="relative bg-white col-span-12">
-          <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="mx-auto">
             <div class="relative flex h-16 items-center justify-between">
               <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <!-- Mobile menu button-->
@@ -41,14 +41,14 @@
               </div>
               <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div class="flex shrink-0 items-center">
-                  <img src="image/ReBois_logo.svg" alt="Your Company" class="h-8 w-auto" />
+                  <img src="image/ReBois_logo.svg" alt="Rebois Logo" class="h-8 w-auto" />
                 </div>
                 <button class="nav-link px-lg-4 px-2" id="butInstall" aria-label="Install" hidden>Installer la PWA</button>
                 <div class="hidden sm:ml-6 sm:block">
                   <div class="flex space-x-4">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-                    <a href="index.html" aria-current="page" class="rounded-md bg-[#CF755A] px-3 py-2 text-sm font-medium text-white">Accueil</a>
-                    <a href="realisation.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-400 hover:bg-black/5 hover:text-black">Réalisation</a>
+                    <a href="index.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-400 hover:bg-black/5 hover:text-black">Accueil</a>
+                    <a href="realisation.html" aria-current="page" class="rounded-md bg-[#CF755A] px-3 py-2 text-sm font-medium text-white">Réalisation</a>
                     <a href="contact.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-400 hover:bg-black/5 hover:text-black">Contact</a>
                   </div>
                 </div>
@@ -113,8 +113,8 @@
         </video>
 
         <div class="grid grid-cols-12 gap-6 max-w-[1900px] w-[80%] mx-auto">
-          <div class="col-span-12">
-            <div class="px-6 lg:px-8">
+          <div class="col-span-8 col-start-3 text-center">
+            <div>
               <div class="mx-auto">
                 <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-6xl">Chaque meuble a une histoire, nous lui offrons une nouvelle vie.</h2>
                 <p class="mt-8 text-lg font-medium text-pretty text-white sm:text-xl/8">Découvrez nos réalisations et voyez comment Bois & Mémoire transforme le passé en trésors intemporels.</p>
@@ -125,56 +125,65 @@
       </section>
 
       <section id="realisation" class="py-24">
-        <div class="max-w-[1900px] w-[80%] mx-auto">
-          <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
-            <div class="grid gap-4">
-              <div>
-                <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80" alt="gallery-photo" />
-              </div>
-              <div>
-                <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=927&amp;q=80" alt="gallery-photo" />
-              </div>
-              <div>
-                <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80" alt="gallery-photo" />
-              </div>
+        <div class="max-w-[1900px] w-[80%] mx-auto grid grid-cols-2 gap-4 md:grid-cols-12">
+          <div class="col-span-8 col-start-3 text-center pb-10">
+            <h3 class="text-4xl font-semibold tracking-tight text-gray-900sm:text-5xl">Projet vedette</h3>
+
+            <p class="mt-8 text-lg font-medium text-pretty text-gray-900 sm:text-xl/8">Nous aimons mettre en avant des projets qui représentent l’essence de notre travail. Découvrez la transformation d’une pièce marquante : de l’usure du temps à une nouvelle élégance.</p>
+          </div>
+          <div class="grid gap-4 md:col-span-3 col-span-12">
+            <div>
+              <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_01-v.jpg" alt="Banc en bois de cerisier avec espacement" />
             </div>
-            <div class="grid gap-4">
-              <div>
-                <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=687&amp;q=80" alt="gallery-photo" />
-              </div>
-              <div>
-                <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="gallery-photo" />
-              </div>
-              <div>
-                <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="https://docs.material-tailwind.com/img/team-3.jpg" alt="gallery-photo" />
-              </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_01-c.jpg" alt="Restauration de chaise de style bahaus" />
             </div>
-            <div class="grid gap-4">
-              <div>
-                <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80" alt="gallery-photo" />
-              </div>
-              <div>
-                <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="https://docs.material-tailwind.com/img/team-3.jpg" alt="gallery-photo" />
-              </div>
-              <div>
-                <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=687&amp;q=80" alt="gallery-photo" />
-              </div>
+            <div>
+              <img class="h-auto w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_01.jpg" alt="Ensemble de cuisine remis à neuf avec un look contemporain" />
             </div>
-            <div class="grid gap-4">
-              <div>
-                <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=687&amp;q=80" alt="gallery-photo" />
-              </div>
-              <div>
-                <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=927&amp;q=80" alt="gallery-photo" />
-              </div>
+          </div>
+          <div class="grid gap-4 md:col-span-3 col-span-12">
+            <div>
+              <img class="h-auto w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_02.jpg" alt="Banc d'entrée appartement à la famille Leclere depuis 1930" />
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_02-c.jpg" alt="Outils de restauration" />
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_02-v.jpg" alt="Plan rapprocher de la jonction d'une chaise" />
+            </div>
+          </div>
+          <div class="grid gap-4 md:col-span-3 col-span-12">
+            <div>
+              <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_03-v.jpg" alt="Jeu de lumière avec les barreaux d'une chaise" />
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_03-c.jpg" alt="Reconstruction d'un plancher en chevrons de bois" />
+            </div>
+            <div>
+              <img class="h-auto w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_03.jpg" alt="Chaise haute en bois avec beaucoup d'histoire pour la famille Bellemare" />
+            </div>
+          </div>
+          <div class="grid gap-4 md:col-span-3 col-span-12">
+            <div>
+              <img class="h-auto w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_06.jpg" alt="Table d'appoint parfaite pour déposer son café " />
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_04-c.jpg" alt="Banc d'entrée fabriqué avec du bois de grange recyclé" />
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_06-v.jpg" alt="Petite table basse accompagnée d'un banc" />
             </div>
           </div>
         </div>
       </section>
+      <section id="prix">
+        <div class="max-w-[1900px] w-[80%] mx-auto grid grid-cols-2 gap-4 md:grid-cols-12"></div>
+      </section>
     </main>
 
     <footer class="bg-white py-10 shadow-sm dark:bg-gray-100">
-      <div class="mx-auto max-w-7xl px-2 py-8 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-7xl py-8 max-w-[1900px] w-[80%] mx-auto">
         <div class="sm:flex sm:items-center gap-x-30 sm:justify-between">
           <div class="flex flex-col sm:flex-col sm:space-x-6 rtl:space-x-reverse">
             <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
