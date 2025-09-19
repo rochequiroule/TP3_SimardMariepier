@@ -6,6 +6,7 @@ const nomInput = document.getElementById("nom");
 const emailInput = document.getElementById("email");
 const phoneNumberInput = document.getElementById("phoneNumber");
 const messageInput = document.getElementById("message");
+const checkbox = document.getElementById("conditions");
 
 const validateForm = () => {
   let isFormValid = true;
@@ -53,6 +54,11 @@ const validateForm = () => {
     isFormValid = false;
   }
 
+  if (!checkbox.checked) {
+    setError("Vous devez accepter les conditions");
+    isFormValid = false;
+  }
+
   return isFormValid;
 };
 
@@ -77,6 +83,14 @@ const setError = (message) => {
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (validateForm()) {
-    window.location.href = "confirmation-infolettre.html";
+    window.location.href = "confirmation-form.html";
+  }
+});
+
+checkbox.addEventListener("change", (event) => {
+  if (event.target.checked) {
+    console.log("Checkbox state changed to checked!");
+  } else {
+    console.log("Checkbox state changed to unchecked!");
   }
 });
