@@ -1,5 +1,5 @@
 // Nom du cache — change ce nom si tu veux forcer une mise à jour
-const CACHE_NAME = "static-cache-v8";
+const CACHE_NAME = "static-cache-v9";
 
 // Fichiers à mettre en cache au moment de l’installation
 const FILES_TO_CACHE = [
@@ -34,7 +34,6 @@ const FILES_TO_CACHE = [
   "/TP3_SimardMariepier/image/realisation_05-v.jpg",
   "/TP3_SimardMariepier/image/realisation_05.jpg",
   "/TP3_SimardMariepier/image/realisation_06-v.jpg",
-  "/TP3_SimardMariepier/image/realisation_06-c.jpg",
   "/TP3_SimardMariepier/image/realisation_06.jpg",
   "/TP3_SimardMariepier/image/ReBois_logo.svg",
   "/TP3_SimardMariepier/video/4480575-hd_1920_1080_30fps.mp4",
