@@ -21,92 +21,92 @@
     {
       "purpose": "maskable",
       "sizes": "48x48",
-      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_facebook_x48.png",
-      "type": "image/png"
+      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_facebook_x48.jpg",
+      "type": "image/jpg"
     },
     {
       "purpose": "maskable",
       "sizes": "72x72",
-      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_facebook_x72.png",
-      "type": "image/png"
+      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_facebook_x72.jpg",
+      "type": "image/jpg"
     },
     {
       "purpose": "maskable",
       "sizes": "96x96",
-      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_facebook_x96.png",
-      "type": "image/png"
+      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_facebook_x96.jpg",
+      "type": "image/jpg"
     },
     {
       "purpose": "maskable",
       "sizes": "128x128",
-      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_facebook_x128.png",
-      "type": "image/png"
+      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_facebook_x128.jpg",
+      "type": "image/jpg"
     },
     {
       "purpose": "maskable",
       "sizes": "192x192",
-      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_facebook_x192.png",
-      "type": "image/png"
+      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_facebook_x192.jpg",
+      "type": "image/jpg"
     },
     {
       "purpose": "maskable",
       "sizes": "48x48",
-      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_instagram_x48.png",
-      "type": "image/png"
+      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_instagram_x48.jpg",
+      "type": "image/jpg"
     },
     {
       "purpose": "maskable",
       "sizes": "72x72",
-      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_instagram_x72.png",
-      "type": "image/png"
+      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_instagram_x72.jpg",
+      "type": "image/jpg"
     },
     {
       "purpose": "maskable",
       "sizes": "96x96",
-      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_instagram_x96.png",
-      "type": "image/png"
+      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_instagram_x96.jpg",
+      "type": "image/jpg"
     },
     {
       "purpose": "maskable",
       "sizes": "128x128",
-      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_instagram_x128.png",
-      "type": "image/png"
+      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_instagram_x128.jpg",
+      "type": "image/jpg"
     },
     {
       "purpose": "maskable",
       "sizes": "192x192",
-      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_instagram_x192.png",
-      "type": "image/png"
+      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_instagram_x192.jpg",
+      "type": "image/jpg"
     },
     {
       "purpose": "maskable",
       "sizes": "48x48",
-      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_youtube_x48.png",
-      "type": "image/png"
+      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_youtube_x48.jpg",
+      "type": "image/jpg"
     },
     {
       "purpose": "maskable",
       "sizes": "72x72",
-      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_youtube_x72.png",
-      "type": "image/png"
+      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_youtube_x72.jpg",
+      "type": "image/jpg"
     },
     {
       "purpose": "maskable",
       "sizes": "96x96",
-      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_youtube_x96.png",
-      "type": "image/png"
+      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_youtube_x96.jpg",
+      "type": "image/jpg"
     },
     {
       "purpose": "maskable",
       "sizes": "128x128",
-      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_youtube_x128.png",
-      "type": "image/png"
+      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_youtube_x128.jpg",
+      "type": "image/jpg"
     },
     {
       "purpose": "maskable",
       "sizes": "192x192",
-      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_youtube_x192.png",
-      "type": "image/png"
+      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_youtube_x192.jpg",
+      "type": "image/jpg"
     }
   ],
   "shortcuts": [
@@ -114,15 +114,13 @@
       "name": "Contact",
       "short_name": "Contact",
       "description": "Accéder rapidement à la page contact",
-      "url": "/TP3_SimardMariepier/contact.html",
-      "icons": [{ "src": "/TP3_SimardMariepier/image/icon-96.png", "sizes": "96x96" }]
+      "url": "/TP3_SimardMariepier/contact.html"
     },
     {
       "name": "Réalisations",
       "short_name": "Réalisations",
       "description": "Voir les réalisations de ReBois",
-      "url": "/TP3_SimardMariepier/realisation.html",
-      "icons": [{ "src": "/TP3_SimardMariepier/image/icon-96.png", "sizes": "96x96" }]
+      "url": "/TP3_SimardMariepier/realisation.html"
     }
   ]
 }
