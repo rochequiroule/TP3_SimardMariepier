@@ -18,5 +18,5 @@ anime
     opacity: 0,
     duration: 1000,
     easing: "easeOutExpo",
-    delay: 2200,
+    delay: 8200,
   });

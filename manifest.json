@@ -48,5 +48,21 @@
       "src": "/TP3_SimardMariepier/image/icons/maskable_icon_x192.png",
       "type": "image/png"
     }
+  ],
+  "shortcuts": [
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Accéder rapidement à la page contact",
+      "url": "/TP3_SimardMariepier/contact.html",
+      "icons": [{ "src": "/TP3_SimardMariepier/image/icon-96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Réalisations",
+      "short_name": "Réalisations",
+      "description": "Voir les réalisations de ReBois",
+      "url": "/TP3_SimardMariepier/realisation.html",
+      "icons": [{ "src": "/TP3_SimardMariepier/image/icon-96.png", "sizes": "96x96" }]
+    }
   ]
 }
