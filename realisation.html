@@ -6,7 +6,7 @@
     <meta name="description" content="Nous croyons que chaque meuble a une âme et une histoire à raconter. Notre mission est de préserver ce patrimoine tout en lui offrant une seconde vie." />
     <title>TP3 - ReBois</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <link rel="stylesheet" href="style/css/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
@@ -42,7 +42,6 @@
                 <div class="flex shrink-0 items-center">
                   <img src="image/ReBois_logo.svg" alt="Rebois Logo" class="h-8 w-auto" />
                 </div>
-                <button class="nav-link px-lg-4 px-2" id="butInstall" aria-label="Install" hidden>Installer la PWA</button>
                 <div class="hidden sm:ml-6 sm:block">
                   <div class="flex space-x-4">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
@@ -125,52 +124,52 @@
       <section id="realisation" class="py-24">
         <div class="max-w-[1900px] w-[80%] mx-auto grid grid-cols-2 gap-4 md:grid-cols-12">
           <div class="col-span-8 col-start-3 text-center pb-10">
-            <h3 class="text-4xl font-semibold tracking-tight text-gray-900sm:text-5xl">Projet vedette</h3>
+            <h3 class="titleAnimate text-4xl font-semibold tracking-tight text-gray-900sm:text-5xl">Projet vedette</h3>
 
             <p class="mt-8 text-lg font-medium text-pretty text-gray-900 sm:text-xl/8">Nous aimons mettre en avant des projets qui représentent l’essence de notre travail. Découvrez la transformation d’une pièce marquante : de l’usure du temps à une nouvelle élégance.</p>
           </div>
           <div class="grid gap-4 md:col-span-3 col-span-12">
             <div>
-              <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_01-v.jpg" alt="Banc en bois de cerisier avec espacement" />
+              <img data-aos="fade-up" class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_01-v.jpg" alt="Banc en bois de cerisier avec espacement" />
             </div>
             <div>
-              <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_01-c.jpg" alt="Restauration de chaise de style bahaus" />
+              <img data-aos="fade-up" class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_01-c.jpg" alt="Restauration de chaise de style bahaus" />
             </div>
             <div>
-              <img class="h-auto w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_01.jpg" alt="Ensemble de cuisine remis à neuf avec un look contemporain" />
-            </div>
-          </div>
-          <div class="grid gap-4 md:col-span-3 col-span-12">
-            <div>
-              <img class="h-auto w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_02.jpg" alt="Banc d'entrée appartement à la famille Leclere depuis 1930" />
-            </div>
-            <div>
-              <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_02-c.jpg" alt="Outils de restauration" />
-            </div>
-            <div>
-              <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_02-v.jpg" alt="Plan rapprocher de la jonction d'une chaise" />
+              <img data-aos="fade-up" class="h-auto w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_01.jpg" alt="Ensemble de cuisine remis à neuf avec un look contemporain" />
             </div>
           </div>
           <div class="grid gap-4 md:col-span-3 col-span-12">
             <div>
-              <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_03-v.jpg" alt="Jeu de lumière avec les barreaux d'une chaise" />
+              <img data-aos="fade-up" class="h-auto w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_02.jpg" alt="Banc d'entrée appartement à la famille Leclere depuis 1930" />
             </div>
             <div>
-              <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_03-c.jpg" alt="Reconstruction d'un plancher en chevrons de bois" />
+              <img data-aos="fade-up" class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_02-c.jpg" alt="Outils de restauration" />
             </div>
             <div>
-              <img class="h-auto w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_03.jpg" alt="Chaise haute en bois avec beaucoup d'histoire pour la famille Bellemare" />
+              <img data-aos="fade-up" class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_02-v.jpg" alt="Plan rapprocher de la jonction d'une chaise" />
             </div>
           </div>
           <div class="grid gap-4 md:col-span-3 col-span-12">
             <div>
-              <img class="h-auto w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_06.jpg" alt="Table d'appoint parfaite pour déposer son café " />
+              <img data-aos="fade-up" class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_03-v.jpg" alt="Jeu de lumière avec les barreaux d'une chaise" />
             </div>
             <div>
-              <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_04-c.jpg" alt="Banc d'entrée fabriqué avec du bois de grange recyclé" />
+              <img data-aos="fade-up" class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_03-c.jpg" alt="Reconstruction d'un plancher en chevrons de bois" />
             </div>
             <div>
-              <img class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_06-v.jpg" alt="Petite table basse accompagnée d'un banc" />
+              <img data-aos="fade-up" class="h-auto w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_03.jpg" alt="Chaise haute en bois avec beaucoup d'histoire pour la famille Bellemare" />
+            </div>
+          </div>
+          <div class="grid gap-4 md:col-span-3 col-span-12">
+            <div>
+              <img data-aos="fade-up" class="h-auto w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_06.jpg" alt="Table d'appoint parfaite pour déposer son café " />
+            </div>
+            <div>
+              <img data-aos="fade-up" class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_04-c.jpg" alt="Banc d'entrée fabriqué avec du bois de grange recyclé" />
+            </div>
+            <div>
+              <img data-aos="fade-up" class="h-auto max-w-full rounded-lg object-cover object-center hover:opacity-75" src="image/realisation_06-v.jpg" alt="Petite table basse accompagnée d'un banc" />
             </div>
           </div>
         </div>
@@ -181,7 +180,7 @@
             <h3 class="text-4xl font-semibold tracking-tight text-[gray-900] sm:text-5xl py-4">Nos tarifs</h3>
             <p>Chaque meuble est unique, et nos prix varient selon son état et le travail nécessaire. Voici un aperçu de nos services, avec des tarifs "à partir de" pour vous guider.</p>
           </div>
-          <div class="md:col-span-4 sm:col-span-10 sm:col-start-2 bg-gray-100 lg:p-20 rounded-lg border border-gray-200 py-10 mx-auto p-10 m-10">
+          <div data-aos="fade-up" data-aos="fade-up" class="md:col-span-4 sm:col-span-10 sm:col-start-2 bg-gray-100 lg:p-20 rounded-lg border border-gray-200 py-10 mx-auto p-10 m-10">
             <h4 class="text-xl font-semibold text-[#CF755A]">Restauration complète</h4>
             <p class="mt-6 text-base/7 text-gray-700">Nous redonnons une nouvelle vie à vos meubles anciens ou abîmés. Du ponçage au vernissage, en passant par les réparations nécessaires, tout est fait pour préserver l’authenticité de la pièce.</p>
             <p class="mt-4 flex flex-col items-baseline gap-x-2">
@@ -223,10 +222,10 @@
 
             <p class="flex gap-x-3 text-gray-600 mt-8">Contactez-nous pour obtenir ce service</p>
 
-            <a href="/contact#formulaire" class="inline-flex items-center justify-center w-full sm:w-auto pt-6 rounded-lg hover:underline text-[#CF755A] font-medium transition"> Formulaire de contact </a>
+            <a data-aos="fade-right" href="/contact#formulaire" class="inline-flex items-center justify-center w-full sm:w-auto pt-6 rounded-lg hover:underline text-[#CF755A] font-medium transition"> Formulaire de contact </a>
           </div>
 
-          <div class="md:col-span-4 sm:col-span-10 sm:col-start-2 bg-gray-100 lg:p-20 rounded-lg border border-gray-200 py-10 mx-auto p-10 m-10">
+          <div data-aos="fade-up" class="md:col-span-4 sm:col-span-10 sm:col-start-2 bg-gray-100 lg:p-20 rounded-lg border border-gray-200 py-10 mx-auto p-10 m-10">
             <h4 class="text-xl font-semibold text-[#CF755A]">Personnalisation sur mesure</h4>
             <p class="mt-6 text-base/7 text-gray-700">Transformez vos meubles selon vos envies. Que vous choisissiez une peinture moderne, une patine vintage ou une teinture, nous créons une finition qui s’intègre parfaitement à votre intérieur.</p>
             <p class="mt-4 flex flex-col items-baseline gap-x-2">
@@ -261,9 +260,9 @@
             </ul>
             <p class="flex gap-x-3 text-gray-600 mt-8">Contactez-nous pour obtenir ce service</p>
 
-            <a href="/contact#formulaire" class="inline-flex items-center justify-center w-full sm:w-auto pt-6 rounded-lg hover:underline text-[#CF755A] font-medium transition"> Formulaire de contact </a>
+            <a data-aos="fade-right" href="/contact#formulaire" class="inline-flex items-center justify-center w-full sm:w-auto pt-6 rounded-lg hover:underline text-[#CF755A] font-medium transition"> Formulaire de contact </a>
           </div>
-          <div class="md:col-span-4 sm:col-span-10 sm:col-start-2 bg-gray-100 lg:p-20 rounded-lg border border-gray-200 py-10 mx-auto p-10 m-10">
+          <div data-aos="fade-up" class="md:col-span-4 sm:col-span-10 sm:col-start-2 bg-gray-100 lg:p-20 rounded-lg border border-gray-200 py-10 mx-auto p-10 m-10">
             <h4 class="text-xl font-semibold text-[#CF755A]">Réparation ciblée</h4>
             <p class="mt-6 text-base/7 text-gray-700">Un tiroir bloqué, une charnière usée, une tâche d'eeau, un pied cassé ? Nous effectuons des réparations rapides, efficaces et durables pour prolonger la vie de vos meubles sans en altérer le charme.</p>
             <p class="mt-4 flex flex-col items-baseline gap-x-2">
@@ -292,7 +291,7 @@
             </ul>
             <p class="flex gap-x-3 text-gray-600 mt-8">Contactez-nous pour obtenir ce service</p>
 
-            <a href="/contact#formulaire" class="inline-flex items-center justify-center w-full sm:w-auto pt-6 rounded-lg hover:underline text-[#CF755A] font-medium transition"> Formulaire de contact </a>
+            <a data-aos="fade-right" href="/contact#formulaire" class="inline-flex items-center justify-center w-full sm:w-auto pt-6 rounded-lg hover:underline text-[#CF755A] font-medium transition"> Formulaire de contact </a>
           </div>
         </div>
       </section>

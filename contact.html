@@ -6,7 +6,7 @@
     <meta name="description" content="Nous croyons que chaque meuble a une âme et une histoire à raconter. Notre mission est de préserver ce patrimoine tout en lui offrant une seconde vie." />
     <title>TP3 - ReBois</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <link rel="stylesheet" href="style/css/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
@@ -33,7 +33,6 @@
                 <div class="flex shrink-0 items-center">
                   <img src="image/ReBois_logo.svg" alt="Rebois Logo" class="h-8 w-auto" />
                 </div>
-                <button class="nav-link px-lg-4 px-2" id="butInstall" aria-label="Install" hidden>Installer la PWA</button>
                 <div class="hidden sm:ml-6 sm:block">
                   <div class="flex space-x-4">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
@@ -94,14 +93,14 @@
 
     <main id="main">
       <a class="screen-reader-text" href="#main">Aller au contenu principal</a>
-      <section id="formulaire" class="relative isolate overflow-hidden bg-[#CF755A] py-24 sm:py-32">
+      <section data-aos="fade-up" id="formulaire" class="relative isolate overflow-hidden bg-[#CF755A] py-24 sm:py-32">
         <div class="grid grid-cols-12 gap-6 max-w-[1900px] w-[80%] mx-auto">
           <div class="col-span-8 col-start-3 px-6">
             <div aria-hidden="true" class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
               <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="relative left-1/2 -z-10 aspect-1155/678 w-144.5 max-w-none -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#D8D5BF] to-[#D8D5BF] opacity-20 sm:left-[calc(50%-40rem)] sm:w-288.75"></div>
             </div>
             <div class="mx-auto max-w-2xl text-center">
-              <h2 class="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">Formulaire de contact</h2>
+              <h2 class="titleAnimate text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">Formulaire de contact</h2>
               <p class="mt-2 text-lg/8 text-white">N'hésite pas à entrer en contact avec nous si vous avez des questions ou pour obtenir une soumission pour votre projet de restauration</p>
             </div>
             <form novalidate class="mx-auto mt-16 max-w-xl sm:mt-20">
@@ -184,13 +183,12 @@
       </section>
 
       <section id="carte" class="py-24">
-        <div class="max-w-[1900px] w-[80%] mx-auto grid grid-cols-2 gap-6 md:grid-cols-12">
-          <!-- component -->
+        <div data-aos="fade-up" class="max-w-[1900px] w-[80%] mx-auto grid grid-cols-2 gap-6 md:grid-cols-12">
           <div class="col-span-12 text-gray-600 relative">
             <div class="absolute inset-0 bg-gray-300">
               <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2730.5634046942932!2d-71.25187096905775!3d46.81290550989004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb8965cca0250ed%3A0x8234da9de1bcfc41!2s9%20Courcelette%20St%2C%20Qu%C3%A9bec%20City%2C%20QC%20G1N%203C1!5e0!3m2!1sen!2sca!4v1758248231317!5m2!1sen!2sca" style=""></iframe>
             </div>
-            <div class="container px-5 py-24 mx-auto flex">
+            <div data-aos="fade-up" class="container px-5 py-24 mx-auto flex">
               <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
                 <div class="gap-10 px-6 py-12 mx-auto flex flex-col">
                   <div>
@@ -224,7 +222,7 @@
           <h1 class="text-3xl col-span-8 col-start-3 text-center md:text-4xl mt-34 font-bold text-gray-800">Nos client satisfaits</h1>
           <p class="text-sm col-span-10 col-start-2 text-center md:text-base text-gray-700">Vous hésitez encore à faire appel à nos service? Laissez-vous convaincre par nos cliens.</p>
           <div class="flex col-span-12 grid-cols-12 grid flex-wrap justify-center gap-5 mt-8 text-left">
-            <div class="col-span-4 flex flex-col items-start border border-gray-200 p-16 rounded-lg bg-white">
+            <div data-aos="fade-up" class="col-span-4 flex flex-col items-start border border-gray-200 p-16 rounded-lg bg-white">
               <svg width="44" height="40" viewBox="0 0 44 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M33.172 5.469q2.555 0 4.547 1.547a7.4 7.4 0 0 1 2.695 4.007q.47 1.711.469 3.61 0 2.883-1.125 5.86a22.8 22.8 0 0 1-3.094 5.577 33 33 0 0 1-4.57 4.922A35 35 0 0 1 26.539 35l-3.398-3.398q5.296-4.243 7.218-6.563 1.946-2.32 2.016-4.617-2.86-.329-4.781-2.461-1.923-2.133-1.922-4.992 0-3.117 2.18-5.297 2.202-2.203 5.32-2.203m-20.625 0q2.555 0 4.547 1.547a7.4 7.4 0 0 1 2.695 4.007q.47 1.711.469 3.61 0 2.883-1.125 5.86a22.8 22.8 0 0 1-3.094 5.577 33 33 0 0 1-4.57 4.922A35 35 0 0 1 5.914 35l-3.398-3.398q5.296-4.243 7.218-6.563 1.946-2.32 2.016-4.617-2.86-.329-4.781-2.461-1.922-2.133-1.922-4.992 0-3.117 2.18-5.297 2.202-2.203 5.32-2.203"
@@ -257,7 +255,7 @@
               </div>
             </div>
 
-            <div class="col-span-4 col-start-5 flex flex-col items-start border border-gray-200 p-16 rounded-lg bg-white">
+            <div data-aos="fade-up" class="col-span-4 col-start-5 flex flex-col items-start border border-gray-200 p-16 rounded-lg bg-white">
               <svg width="44" height="40" viewBox="0 0 44 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M33.172 5.469q2.555 0 4.547 1.547a7.4 7.4 0 0 1 2.695 4.007q.47 1.711.469 3.61 0 2.883-1.125 5.86a22.8 22.8 0 0 1-3.094 5.577 33 33 0 0 1-4.57 4.922A35 35 0 0 1 26.539 35l-3.398-3.398q5.296-4.243 7.218-6.563 1.946-2.32 2.016-4.617-2.86-.329-4.781-2.461-1.923-2.133-1.922-4.992 0-3.117 2.18-5.297 2.202-2.203 5.32-2.203m-20.625 0q2.555 0 4.547 1.547a7.4 7.4 0 0 1 2.695 4.007q.47 1.711.469 3.61 0 2.883-1.125 5.86a22.8 22.8 0 0 1-3.094 5.577 33 33 0 0 1-4.57 4.922A35 35 0 0 1 5.914 35l-3.398-3.398q5.296-4.243 7.218-6.563 1.946-2.32 2.016-4.617-2.86-.329-4.781-2.461-1.922-2.133-1.922-4.992 0-3.117 2.18-5.297 2.202-2.203 5.32-2.203"
@@ -290,7 +288,7 @@
               </div>
             </div>
 
-            <div class="col-span-4 col-start-9 flex flex-col items-start border border-gray-200 p-16 rounded-lg bg-white">
+            <div data-aos="fade-up" class="col-span-4 col-start-9 flex flex-col items-start border border-gray-200 p-16 rounded-lg bg-white">
               <svg width="44" height="40" viewBox="0 0 44 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M33.172 5.469q2.555 0 4.547 1.547a7.4 7.4 0 0 1 2.695 4.007q.47 1.711.469 3.61 0 2.883-1.125 5.86a22.8 22.8 0 0 1-3.094 5.577 33 33 0 0 1-4.57 4.922A35 35 0 0 1 26.539 35l-3.398-3.398q5.296-4.243 7.218-6.563 1.946-2.32 2.016-4.617-2.86-.329-4.781-2.461-1.923-2.133-1.922-4.992 0-3.117 2.18-5.297 2.202-2.203 5.32-2.203m-20.625 0q2.555 0 4.547 1.547a7.4 7.4 0 0 1 2.695 4.007q.47 1.711.469 3.61 0 2.883-1.125 5.86a22.8 22.8 0 0 1-3.094 5.577 33 33 0 0 1-4.57 4.922A35 35 0 0 1 5.914 35l-3.398-3.398q5.296-4.243 7.218-6.563 1.946-2.32 2.016-4.617-2.86-.329-4.781-2.461-1.922-2.133-1.922-4.992 0-3.117 2.18-5.297 2.202-2.203 5.32-2.203"
