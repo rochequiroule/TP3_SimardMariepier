@@ -10,15 +10,6 @@
     <link rel="stylesheet" href="style/css/style.css" />
     <link rel="manifest" href="manifest.json" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-    <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker
-          .register("/TP3_SimardMariepier/service-worker.js")
-          .then((reg) => console.log("Service worker enregistré :", reg.scope))
-          .catch((err) => console.error("Erreur service worker :", err));
-      }
-    </script>
   </head>
   <body>
     <header id="header" class="">
@@ -56,7 +47,7 @@
               <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
                   <span class="absolute -inset-1.5"></span>
-                  <span class="sr-only">View notifications</span>
+                  <span class="sr-only">Visitez notre Facebook</span>
                   <span class="[&>svg]:h-5 [&>svg]:w-5">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 320 512">
                       <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
@@ -66,7 +57,7 @@
                 </button>
                 <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
                   <span class="absolute -inset-1.5"></span>
-                  <span class="sr-only">View notifications</span>
+                  <span class="sr-only">Visitez notre Instagram</span>
                   <span class="[&>svg]:h-5 [&>svg]:w-5">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
                       <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
@@ -78,7 +69,7 @@
                 </button>
                 <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
                   <span class="absolute -inset-1.5"></span>
-                  <span class="sr-only">View notifications</span>
+                  <span class="sr-only">Visitez notre Youtube</span>
                   <span class="[&>svg]:h-5 [&>svg]:w-5">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512">
                       <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
@@ -258,11 +249,11 @@
                   <path d="M7.524.464a.5.5 0 0 1 .952 0l1.432 4.41a.5.5 0 0 0 .476.345h4.637a.5.5 0 0 1 .294.904L11.563 8.85a.5.5 0 0 0-.181.559l1.433 4.41a.5.5 0 0 1-.77.559L8.294 11.65a.5.5 0 0 0-.588 0l-3.751 2.726a.5.5 0 0 1-.77-.56l1.433-4.41a.5.5 0 0 0-.181-.558L.685 6.123A.5.5 0 0 1 .98 5.22h4.637a.5.5 0 0 0 .476-.346z" fill="#CF755A" />
                 </svg>
               </div>
-              <p class="text-sm mt-3 text-gray-500">I've been using imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.</p>
+              <p class="text-sm mt-3 text-gray-500">J’avais une vieille commode qui appartenait à ma grand-mère et que je croyais bonne pour la déchetterie. L’équipe de Bois & Mémoire l’a restaurée avec un soin incroyable. Aujourd’hui, elle trône fièrement dans mon salon et tout le monde me demande où je l’ai trouvée</p>
               <div class="flex items-center gap-3 mt-4">
                 <div>
-                  <h2 class="text-lg text-gray-900 font-medium">Donald Jackman</h2>
-                  <p class="text-sm text-gray-500">SWE 1 @ Amazon</p>
+                  <h2 class="text-lg text-gray-900 font-medium">Claire D</h2>
+                  <p class="text-sm text-gray-500">Montréal</p>
                 </div>
               </div>
             </div>
@@ -291,11 +282,11 @@
                   <path d="M7.524.464a.5.5 0 0 1 .952 0l1.432 4.41a.5.5 0 0 0 .476.345h4.637a.5.5 0 0 1 .294.904L11.563 8.85a.5.5 0 0 0-.181.559l1.433 4.41a.5.5 0 0 1-.77.559L8.294 11.65a.5.5 0 0 0-.588 0l-3.751 2.726a.5.5 0 0 1-.77-.56l1.433-4.41a.5.5 0 0 0-.181-.558L.685 6.123A.5.5 0 0 1 .98 5.22h4.637a.5.5 0 0 0 .476-.346z" fill="#CF755A" />
                 </svg>
               </div>
-              <p class="text-sm mt-3 text-gray-500">I've been using imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.</p>
+              <p class="text-sm mt-3 text-gray-500">Mon bureau en bois massif avait perdu tout son éclat. Grâce à Bois & Mémoire, il a retrouvé sa noblesse d’origine. On voit vraiment la passion et le savoir-faire derrière chaque détail.</p>
               <div class="flex items-center gap-3 mt-4">
                 <div>
-                  <h2 class="text-lg text-gray-900 font-medium">Richard Nelson</h2>
-                  <p class="text-sm text-gray-500">SWE 2 @ Amazon</p>
+                  <h2 class="text-lg text-gray-900 font-medium">Marc L.</h2>
+                  <p class="text-sm text-gray-500">Laval</p>
                 </div>
               </div>
             </div>
@@ -324,11 +315,11 @@
                   <path d="M7.524.464a.5.5 0 0 1 .952 0l1.432 4.41a.5.5 0 0 0 .476.345h4.637a.5.5 0 0 1 .294.904L11.563 8.85a.5.5 0 0 0-.181.559l1.433 4.41a.5.5 0 0 1-.77.559L8.294 11.65a.5.5 0 0 0-.588 0l-3.751 2.726a.5.5 0 0 1-.77-.56l1.433-4.41a.5.5 0 0 0-.181-.558L.685 6.123A.5.5 0 0 1 .98 5.22h4.637a.5.5 0 0 0 .476-.346z" fill="#CF755A" />
                 </svg>
               </div>
-              <p class="text-sm mt-3 text-gray-500">I've been using imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.</p>
+              <p class="text-sm mt-3 text-gray-500">Je voulais donner une deuxième vie à ma table de cuisine plutôt que d’en acheter une neuve. Le résultat est au-delà de mes attentes : solide, élégant, et avec une touche moderne qui s’intègre parfaitement à ma maison.</p>
               <div class="flex items-center gap-3 mt-4">
                 <div>
-                  <h2 class="text-lg text-gray-900 font-medium">James Washington</h2>
-                  <p class="text-sm text-gray-500">SWE 2 @ Google</p>
+                  <h2 class="text-lg text-gray-900 font-medium">Sophie G.</h2>
+                  <p class="text-sm text-gray-500">Longueuil</p>
                 </div>
               </div>
             </div>
@@ -341,7 +332,7 @@
       <div class="mx-auto max-w-7xl py-8 max-w-[1900px] w-[80%] mx-auto">
         <div class="sm:flex sm:items-center gap-x-30 sm:justify-between">
           <div class="flex flex-col sm:flex-col sm:space-x-6 rtl:space-x-reverse">
-            <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+            <a href="index.html" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
               <img src="image/ReBois_logo.svg" alt="Rebois Logo" class="h-8 w-auto" />
             </a>
             <p class="w-auto mx-auto py-5">Qu’il s’agisse d’une pièce de famille ou d’une trouvaille unique, nous lui redonnons son éclat avec soin, passion et créativité.</p>
@@ -349,7 +340,7 @@
           <div class="flex gap-10">
             <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
               <span class="absolute -inset-1.5"></span>
-              <span class="sr-only">View notifications</span>
+              <span class="sr-only">Visitez notre Facebook</span>
               <span class="[&>svg]:h-5 [&>svg]:w-5">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 320 512">
                   <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
@@ -359,7 +350,7 @@
             </button>
             <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
               <span class="absolute -inset-1.5"></span>
-              <span class="sr-only">View notifications</span>
+              <span class="sr-only">Visitez notre Instagram</span>
               <span class="[&>svg]:h-5 [&>svg]:w-5">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
                   <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
@@ -371,7 +362,7 @@
             </button>
             <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
               <span class="absolute -inset-1.5"></span>
-              <span class="sr-only">View notifications</span>
+              <span class="sr-only">Visitez notre youtube</span>
               <span class="[&>svg]:h-5 [&>svg]:w-5">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512">
                   <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
@@ -395,7 +386,7 @@
     <script type="module" src="script/script.js"></script>
     <script src="https://unpkg.com/@material-tailwind/html@latest"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/install.js"></script>
+
     <script src="script/validationForm.js"></script>
     <script src="script/animations.js"></script>
     <script>
