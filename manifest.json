@@ -1,5 +1,5 @@
 {
-  "name": "TP3 - Travail Final",
+  "name": "ReBois",
   "short_name": "TP3",
   "description": "Travail pratique 3 - Travail Final",
   "start_url": "./TP3_SimardMariepier/index.html",
@@ -9,12 +9,12 @@
   "orientation": "portrait",
   "screenshots": [
     {
-      "src": "/TP3_SimardMariepier/image/icons/980x980_chaise-icone.jpg",
-      "sizes": "980x980",
-      "type": "image/jpg",
+      "src": "/TP3_SimardMariepier/image/icons/1280x500-rebois-screenshot.png",
+      "sizes": "1280x500",
+      "type": "image/png",
       "form_factor": "wide",
-      "label": "La meilleure chaise",
-      "description": "Compress and compare images with different codecs right in your browser."
+      "label": "Accueil de l'application de ReBois",
+      "description": "Découvrez l'application de Rebois"
     }
   ],
   "icons": [
