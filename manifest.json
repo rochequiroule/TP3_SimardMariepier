@@ -15,6 +15,13 @@
       "form_factor": "wide",
       "label": "Accueil de l'application de ReBois",
       "description": "Découvrez l'application de Rebois"
+    },
+    {
+      "src": "/TP3_SimardMariepier/image/600x800-rebois-screenshot.png",
+      "sizes": "600x800",
+      "type": "image/png",
+      "label": "Version mobile de ReBois",
+      "description": "Affichage mobile de l'application"
     }
   ],
   "icons": [
@@ -43,7 +50,6 @@
       "type": "image/png"
     },
     {
-      "purpose": "maskable",
       "sizes": "144x144",
       "src": "/TP3_SimardMariepier/image/icons/maskable_icon_x144.png",
       "type": "image/png"
@@ -61,7 +67,6 @@
       "type": "image/png"
     },
     {
-      "purpose": "maskable",
       "sizes": "512x512",
       "src": "/TP3_SimardMariepier/image/icons/maskable_icon_x512.png",
       "type": "image/png"
