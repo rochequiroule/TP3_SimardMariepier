@@ -44,6 +44,12 @@
     },
     {
       "purpose": "maskable",
+      "sizes": "144x144",
+      "src": "/TP3_SimardMariepier/image/icons/maskable_icon_x144.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "maskable",
       "sizes": "192x192",
       "src": "/TP3_SimardMariepier/image/icons/maskable_icon_x192.png",
       "type": "image/png"

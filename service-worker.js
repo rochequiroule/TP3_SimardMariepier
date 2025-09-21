@@ -1,5 +1,5 @@
 // Nom du cache — change ce nom si tu veux forcer une mise à jour
-const CACHE_NAME = "static-cache-v14";
+const CACHE_NAME = "static-cache-v15";
 
 // Fichiers à mettre en cache au moment de l’installation
 const FILES_TO_CACHE = [
