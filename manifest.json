@@ -10,7 +10,7 @@
   "screenshots": [
     {
       "src": "/TP3_SimardMariepier/image/1280x500-rebois-screenshot.png",
-      "sizes": "1280x500",
+      "sizes": "1280x800",
       "type": "image/png",
       "form_factor": "wide",
       "label": "Accueil de l'application de ReBois",
