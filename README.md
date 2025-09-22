@@ -59,3 +59,11 @@ Source menu mobile: https://tailwindcss.com/plus/ui-blocks/marketing/elements/he
 
 Toutes les images pour ce site proviennent de Unsplash
 https://unsplash.com/fr/
+
+---
+
+## Composantes Tailwind
+
+- Menu (source : https://tailwindcss.com/plus/ui-blocks/marketing/elements/headers)
+- Header section page d'accueil (source : https://tailwindcss.com/plus/ui-blocks/marketing/sections/header)
+- Formulaire de contact page contact (source : https://tailwindcss.com/plus/ui-blocks/marketing/sections/contact-sections)
