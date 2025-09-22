@@ -1,5 +1,15 @@
-// Typographie variable
+// Typographie
 
-$font-heading-primary: "PlayfairDisplay-Bold", serif;
-$font-heading-secondary: "Merriweather-Bold", serif;
-$font-text: "Lato-Regular", sans-serif;
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/Playfair_Display/PlayfairDisplay-Bold.tff") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato/Lato-Regular.tff") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}

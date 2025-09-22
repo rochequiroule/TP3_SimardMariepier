@@ -1,4 +1,16 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/Playfair_Display/PlayfairDisplay-Bold.tff") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato/Lato-Regular.tff") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 /* validation du formulaire*/
 .success {
   border-color: #089f5b;
@@ -26,4 +38,20 @@
   position: absolute;
   width: 1px;
   word-wrap: normal !important;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
 }
