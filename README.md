@@ -39,6 +39,8 @@ Ce projet met en pratique l'utilisation de **Git**, **SASS**, **Tailwind CSS** (
   git clone https://github.com/rochequiroule/TP3_SimardMariepier.git
   ```
 
+---
+
 ## Validation HTML
 
 > ⚠️ À Noter : lors de la validation HTML, deux erreurs apparaissent pour le composant du menu Tailwind.
@@ -50,3 +52,10 @@ Voici les deux erreurs en question concernant le menu mobile :
 
 Ces attributs sont utilisés pour le fonctionnement du menu mobile avec Tailwind, mais ils n’affectent pas l’utilisation du site.
 Source menu mobile: https://tailwindcss.com/plus/ui-blocks/marketing/elements/headers
+
+---
+
+## Images
+
+Toutes les images pour ce site proviennent de Unsplash
+https://unsplash.com/fr/
