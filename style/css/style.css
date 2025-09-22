@@ -27,18 +27,3 @@
   width: 1px;
   word-wrap: normal !important;
 }
-
-* {
-  box-sizing: border-box;
-}
-
-.item {
-  width: 200px;
-  height: 200px;
-  margin: 50px auto;
-  padding-top: 75px;
-  background: #ccc;
-  text-align: center;
-  color: #fff;
-  font-size: 3em;
-}

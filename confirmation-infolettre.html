@@ -12,14 +12,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <header id="header">
+    <header id="header" class="">
       <div class="gap-6 max-w-[1900px] w-[80%] mx-auto">
         <nav class="relative bg-white col-span-12">
-          <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="mx-auto">
             <div class="relative flex h-16 items-center justify-between">
               <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <!-- Mobile menu button-->
-                <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-black focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+                <button type="button" command="--toggle" commandfor="mobile-menu" aria-controls="mobile-menu" aria-expanded="false" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-black focus:outline-2 focus:-outline-offset-1 focus:outline-[#CF755A]">
                   <span class="absolute -inset-0.5"></span>
                   <span class="sr-only">Open main menu</span>
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
@@ -32,22 +32,20 @@
               </div>
               <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div class="flex shrink-0 items-center">
-                  <img src="image/ReBois_logo.svg" alt="Your Company" class="h-8 w-auto" />
+                  <img src="image/ReBois_logo.svg" alt="Rebois Logo" class="h-8 w-auto" />
                 </div>
-                <button class="nav-link px-lg-4 px-2" id="butInstall" aria-label="Install" hidden>Installer la PWA</button>
                 <div class="hidden sm:ml-6 sm:block">
                   <div class="flex space-x-4">
-                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-                    <a href="index.html" aria-current="page" class="rounded-md bg-[#CF755A] px-3 py-2 text-sm font-medium text-white">Accueil</a>
+                    <a href="index.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-400 hover:bg-black/5 hover:text-black">Accueil</a>
                     <a href="realisation.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-400 hover:bg-black/5 hover:text-black">Réalisation</a>
-                    <a href="contact.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-400 hover:bg-black/5 hover:text-black">Contact</a>
+                    <a href="contact.html" aria-current="page" class="rounded-md bg-[#CF755A] px-3 py-2 text-sm font-medium text-white">Contact</a>
                   </div>
                 </div>
               </div>
               <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+                <button onclick="location.href='https://www.facebook.com/RocheBoboisCanada/'" type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-[#CF755A] hover:text-[#CF755A]">
                   <span class="absolute -inset-1.5"></span>
-                  <span class="sr-only">View notifications</span>
+                  <span class="sr-only">Visitez notre Facebook</span>
                   <span class="[&>svg]:h-5 [&>svg]:w-5">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 320 512">
                       <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
@@ -55,9 +53,9 @@
                     </svg>
                   </span>
                 </button>
-                <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+                <button onclick="location.href='https://www.instagram.com/rochebobois/?hl=fr'" type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-[#CF755A] hover:text-[#CF755A]">
                   <span class="absolute -inset-1.5"></span>
-                  <span class="sr-only">View notifications</span>
+                  <span class="sr-only">Visitez notre Instagram</span>
                   <span class="[&>svg]:h-5 [&>svg]:w-5">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
                       <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
@@ -67,9 +65,9 @@
                     </svg>
                   </span>
                 </button>
-                <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+                <button onclick="location.href='https://www.youtube.com/@RocheBoboisParis'" type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-[#CF755A] hover:text-[#CF755A]">
                   <span class="absolute -inset-1.5"></span>
-                  <span class="sr-only">View notifications</span>
+                  <span class="sr-only">Visitez notre Youtube</span>
                   <span class="[&>svg]:h-5 [&>svg]:w-5">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512">
                       <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
@@ -86,7 +84,7 @@
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
               <a href="index.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-black/5 hover:text-black">Accueil</a>
               <a href="realisation.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-black/5 hover:text-black">Réalisation</a>
-              <a href="contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-black/5 hover:text-black">Contact</a>
+              <a href="contact.html" aria-current="page" class="block rounded-md bg-[#CF755A] px-3 py-2 text-base font-medium text-white">Contact</a>
             </div>
           </el-disclosure>
         </nav>
@@ -105,19 +103,19 @@
       </section>
     </main>
 
-    <footer class="bg-white py-10 shadow-sm dark:bg-gray-100">
-      <div class="mx-auto max-w-7xl px-2 py-8 sm:px-6 lg:px-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
+    <footer class="bg-white py-10 shadow-sm">
+      <div class="mx-auto max-w-7xl py-8 max-w-[1900px] w-[80%] mx-auto">
+        <div class="sm:flex sm:items-center gap-x-30 sm:justify-between">
           <div class="flex flex-col sm:flex-col sm:space-x-6 rtl:space-x-reverse">
-            <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+            <a href="index.html" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
               <img src="image/ReBois_logo.svg" alt="Rebois Logo" class="h-8 w-auto" />
             </a>
-            <p class="w-200 py-5">Qu’il s’agisse d’une pièce de famille ou d’une trouvaille unique, nous lui redonnons son éclat avec soin, passion et créativité.</p>
+            <p class="w-auto mx-auto py-5">Qu’il s’agisse d’une pièce de famille ou d’une trouvaille unique, nous lui redonnons son éclat avec soin, passion et créativité.</p>
           </div>
           <div class="flex gap-10">
-            <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+            <button onclick="location.href='https://www.facebook.com/RocheBoboisCanada/'" type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-black hover:text-[#CF755A]">
               <span class="absolute -inset-1.5"></span>
-              <span class="sr-only">View notifications</span>
+              <span class="sr-only">Visitez notre Facebook</span>
               <span class="[&>svg]:h-5 [&>svg]:w-5">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 320 512">
                   <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
@@ -125,9 +123,9 @@
                 </svg>
               </span>
             </button>
-            <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+            <button onclick="location.href='https://www.instagram.com/rochebobois/?hl=fr'" type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-black hover:text-[#CF755A]">
               <span class="absolute -inset-1.5"></span>
-              <span class="sr-only">View notifications</span>
+              <span class="sr-only">Visitez notre Instagram</span>
               <span class="[&>svg]:h-5 [&>svg]:w-5">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
                   <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
@@ -137,9 +135,9 @@
                 </svg>
               </span>
             </button>
-            <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+            <button onclick="location.href='https://www.youtube.com/@RocheBoboisParis'" type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-black hover:text-[#CF755A]">
               <span class="absolute -inset-1.5"></span>
-              <span class="sr-only">View notifications</span>
+              <span class="sr-only">Visitez notre Youtube</span>
               <span class="[&>svg]:h-5 [&>svg]:w-5">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512">
                   <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
@@ -150,10 +148,10 @@
           </div>
         </div>
 
-        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
         <div class="flex justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="https://flowbite.com/" class="hover:underline">ReBois</a>. </span>
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Tous droits réservés.</span>
+          <span class="text-sm text-gray-500 sm:text-center">© 2025 <a href="https://flowbite.com/" class="hover:underline">ReBois</a>. </span>
+          <span class="text-sm text-gray-500 sm:text-center">Tous droits réservés.</span>
         </div>
       </div>
     </footer>

@@ -31,9 +31,9 @@
             <div class="relative flex h-16 items-center justify-between">
               <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <!-- Mobile menu button-->
-                <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-black focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+                <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-black focus:outline-2 focus:-outline-offset-1 focus:outline-black">
                   <span class="absolute -inset-0.5"></span>
-                  <span class="sr-only">Open main menu</span>
+                  <span class="sr-only">Ouvrir le menu</span>
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
                     <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
@@ -44,9 +44,8 @@
               </div>
               <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div class="flex shrink-0 items-center">
-                  <img src="image/ReBois_logo.svg" alt="Your Company" class="h-8 w-auto" />
+                  <h1><a href="index.html"><img src="image/ReBois_logo.svg" alt="ReBois Logo" class="h-8 w-auto" /></h1></a>
                 </div>
-                <button class="nav-link px-lg-4 px-2" id="butInstall" aria-label="Install" hidden>Installer la PWA</button>
                 <div class="hidden sm:ml-6 sm:block">
                   <div class="flex space-x-4">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
@@ -56,8 +55,10 @@
                   </div>
                 </div>
               </div>
+              <button class="nav-link px-lg-4 px-2" id="butInstall" aria-label="Install" hidden>Installer la PWA</button>
+
               <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+                <button onclick="location.href='https://www.facebook.com/RocheBoboisCanada/'" type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-black hover:text-[#CF755A]">
                   <span class="absolute -inset-1.5"></span>
                   <span class="sr-only">Visitez notre Facebook</span>
                   <span class="[&>svg]:h-5 [&>svg]:w-5">
@@ -67,7 +68,7 @@
                     </svg>
                   </span>
                 </button>
-                <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+                <button onclick="location.href='https://www.instagram.com/rochebobois/?hl=fr'" type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-black hover:text-[#CF755A]">
                   <span class="absolute -inset-1.5"></span>
                   <span class="sr-only">Visitez notre Instagram</span>
                   <span class="[&>svg]:h-5 [&>svg]:w-5">
@@ -79,7 +80,7 @@
                     </svg>
                   </span>
                 </button>
-                <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+                <button onclick="location.href='https://www.youtube.com/@RocheBoboisParis'" type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-black hover:text-[#CF755A]">
                   <span class="absolute -inset-1.5"></span>
                   <span class="sr-only">Visitez notre Youtube</span>
                   <span class="[&>svg]:h-5 [&>svg]:w-5">
@@ -96,7 +97,7 @@
           <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
             <div class="space-y-1 px-2 pt-2 pb-3">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-              <a href="index.html" aria-current="page" class="block rounded-md bg-[#CF755A] px-3 py-2 text-base font-medium text-white">Accueil</a>
+              <a href="index.html" aria-current="page" class="block rounded-md bg-[#CF755A] px-3 py-2 text-base font-medium !text-white">Accueil</a>
               <a href="realisation.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-black/5 hover:text-black">Réalisation</a>
               <a href="contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-black/5 hover:text-black">Contact</a>
             </div>
@@ -117,7 +118,7 @@
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
               <div class="mx-auto max-w-2xl lg:mx-0">
                 <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Donnez une nouvelle vie à vos meubles</h2>
-                <p class="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">Chez ReBois, chaque meuble a une histoire...</p>
+                <p class="mt-8 text-lg font-medium text-pretty text-white sm:text-xl/8">Chez ReBois, chaque meuble a une histoire...</p>
               </div>
               <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
                 <div class="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-white sm:grid-cols-2 md:flex lg:gap-x-10">
@@ -127,19 +128,19 @@
                 </div>
                 <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
                   <div class="flex flex-col-reverse gap-1" data-aos="slide-up">
-                    <dt class="text-base/7 text-gray-300">Meubles restaurés</dt>
+                    <dt class="text-base/7 text-white">Meubles restaurés</dt>
                     <dd class="text-4xl font-semibold tracking-tight text-white">100+</dd>
                   </div>
                   <div class="flex flex-col-reverse gap-1" data-aos="slide-up">
-                    <dt class="text-base/7 text-gray-300">Clients satisfaits</dt>
+                    <dt class="text-base/7 text-white">Clients satisfaits</dt>
                     <dd class="text-4xl font-semibold tracking-tight text-white">200+</dd>
                   </div>
                   <div class="flex flex-col-reverse gap-1" data-aos="slide-up">
-                    <dt class="text-base/7 text-gray-300">Années d’expérience</dt>
+                    <dt class="text-base/7 text-white">Années d’expérience</dt>
                     <dd class="text-4xl font-semibold tracking-tight text-white">10</dd>
                   </div>
                   <div class="flex flex-col-reverse gap-1" data-aos="slide-up">
-                    <dt class="text-base/7 text-gray-300">Passion pour le bois</dt>
+                    <dt class="text-base/7 text-white">Passion pour le bois</dt>
                     <dd class="text-4xl font-semibold tracking-tight text-white">Sans limite</dd>
                   </div>
                 </dl>
@@ -223,7 +224,7 @@
                   </div>
                 </dl>
               </div>
-              <button class="h-12 w-70 rounded-sm bg-[#CF755A] px-12 py-3 mt-15 text-sm font-medium text-white hover:bg-[#D8D5BF] hover:text-black focus:ring-3 focus:outline-hidden">S'inscrire</button>
+              <button class="h-12 w-70 rounded-sm bg-[#CF755A] px-12 py-3 mt-15 text-sm font-medium text-white hover:bg-white hover:text-black focus:ring-3 focus:outline-hidden">S'inscrire</button>
             </div>
           </div>
         </div>
@@ -237,13 +238,13 @@
 
               <p class="mt-4 text-gray-700">Abonnez-vous à notre infolettre et découvrez nos conseils d’entretien, nos projets de restauration et des idées déco pour donner une seconde vie à vos meubles.</p>
             </div>
-            <form class="mx-auto mt-6 flex max-w-xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-center" novalidate>
+            <form class="col-span-8 mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-center" novalidate>
               <label for="email" class="flex-1 hover:border-[CF755A] rounded">
                 <span class="sr-only"> Courriel </span>
               </label>
-              <input id="email" name="email" type="email" placeholder="Entrez votre courriel" class="bg-gray-100 h-12 w-200 rounded border border-gray-400 pl-4 shadow-lg" required />
+              <input id="email" name="email" type="email" placeholder="Entrez votre courriel" class="bg-gray-100 h-12 rounded pl-4 shadow-lg" required />
 
-              <button type="submit" id="submitInfolettre" class="h-12 rounded-sm bg-[#CF755A] px-12 py-3 text-sm font-medium text-white hover:bg-[#D8D5BF] hover:text-black focus:ring-3 focus:outline-hidden">S’inscrire</button>
+              <button type="submit" id="submitInfolettre" class="h-12 ml-0 xl:ml-6 mt-3 md:mt-0 md:ml-3 rounded-sm bg-[#CF755A] px-12 py-3 text-sm font-medium text-white hover:bg-white hover:text-black focus:ring-3 focus:outline-hidden">S’inscrire</button>
             </form>
             <div class="form--errorMessage mt-5 mb-10"></div>
           </div>
@@ -261,7 +262,7 @@
             <p class="w-auto mx-auto py-5">Qu’il s’agisse d’une pièce de famille ou d’une trouvaille unique, nous lui redonnons son éclat avec soin, passion et créativité.</p>
           </div>
           <div class="flex gap-10">
-            <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+            <button onclick="location.href='https://www.facebook.com/RocheBoboisCanada/'" type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-black hover:text-[#CF755A]">
               <span class="absolute -inset-1.5"></span>
               <span class="sr-only">Visitez notre Facebook</span>
               <span class="[&>svg]:h-5 [&>svg]:w-5">
@@ -271,7 +272,7 @@
                 </svg>
               </span>
             </button>
-            <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+            <button onclick="location.href='https://www.instagram.com/rochebobois/?hl=fr'" type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-black hover:text-[#CF755A]">
               <span class="absolute -inset-1.5"></span>
               <span class="sr-only">Visitez notre Instagram</span>
               <span class="[&>svg]:h-5 [&>svg]:w-5">
@@ -283,9 +284,9 @@
                 </svg>
               </span>
             </button>
-            <button type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+            <button onclick="location.href='https://www.youtube.com/@RocheBoboisParis'" type="button" class="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-black hover:text-[#CF755A]">
               <span class="absolute -inset-1.5"></span>
-              <span class="sr-only">Visitez notre youtube</span>
+              <span class="sr-only">Visitez notre Youtube</span>
               <span class="[&>svg]:h-5 [&>svg]:w-5">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512">
                   <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
@@ -303,23 +304,6 @@
         </div>
       </div>
     </footer>
-
-    <section>
-      <div class="item" data-aos="fade-up">1</div>
-      <div class="item" data-aos="fade-down">2</div>
-      <div class="item" data-aos="fade-right">3</div>
-      <div class="item" data-aos="fade-left">4</div>
-
-      <div class="item" data-aos="zoom-in">5</div>
-      <div class="item" data-aos="zoom-out">6</div>
-
-      <div class="item" data-aos="slide-up">7</div>
-
-      <div class="item" data-aos="flip-up">8</div>
-      <div class="item" data-aos="flip-down">9</div>
-      <div class="item" data-aos="flip-right">10</div>
-      <div class="item" data-aos="flip-left">11</div>
-    </section>
 
     <!-- Script -->
 
