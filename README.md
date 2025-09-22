@@ -64,6 +64,7 @@ https://unsplash.com/fr/
 
 ## Composantes Tailwind
 
-- Menu (source : https://tailwindcss.com/plus/ui-blocks/marketing/elements/headers)
-- Header section page d'accueil (source : https://tailwindcss.com/plus/ui-blocks/marketing/sections/header)
-- Formulaire de contact page contact (source : https://tailwindcss.com/plus/ui-blocks/marketing/sections/contact-sections)
+- Menu (source: https://tailwindcss.com/plus/ui-blocks/marketing/elements/headers)
+- Header section page d'accueil (source: https://tailwindcss.com/plus/ui-blocks/marketing/sections/header)
+- Formulaire de contact page contact (source: https://tailwindcss.com/plus/ui-blocks/marketing/sections/contact-sections)
+- Footer (source: https://flowbite.com/docs/components/footer/)
