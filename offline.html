@@ -7,14 +7,31 @@
     <style>
       body {
         font-family: system-ui, sans-serif;
-        text-align: center;
-        padding: 2rem;
         background: #f5f5f5;
         color: #333;
+        margin: 0;
+      }
+
+      .offline {
+        text-align: center;
+        padding: 2rem;
         max-width: 600px;
         margin: auto;
       }
-      h1 {
+
+      .offline__logo {
+        height: 2rem;
+        margin-bottom: 10px;
+      }
+
+      .offline__image-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto 50px auto;
+      }
+
+      .offline__title {
         color: #ffffff;
         position: absolute;
         top: 50%;
@@ -22,11 +39,22 @@
         transform: translate(-50%, -50%);
         text-align: center;
       }
-      h2 {
+
+      .offline__image {
+        display: block;
+        width: 100%;
+      }
+
+      .offline__subtitle {
         margin-top: 2rem;
         color: #222;
       }
-      a {
+
+      .offline__text {
+        margin-top: 1rem;
+      }
+
+      .offline__button {
         display: inline-block;
         margin-top: 1rem;
         padding: 0.5rem 1rem;
@@ -35,50 +63,36 @@
         text-decoration: none;
         border-radius: 4px;
       }
-
-      .logo {
-        height: 2rem;
-        margin-bottom: 10px;
-      }
-      .image {
-        display: block;
-
-        width: 100%;
-      }
-      .conteneur-image {
-        position: relative;
-        width: 100%;
-        max-width: 1280px;
-        margin: 0 auto;
-        margin-bottom: 50px;
-      }
     </style>
   </head>
 
   <body>
-    <img src="image/ReBois_logo.svg" alt="Logo ReBois" class="logo" />
-    <div class="conteneur-image">
-      <h1>Aucune connexion Internet</h1>
-      <img src="image/1400x780-chaise-mur.jpg" alt="Photo de plusieurs chaises fixer au mur" class="image" />
+    <div class="offline">
+      <img src="image/ReBois_logo.svg" alt="Logo ReBois" class="offline__logo" />
+
+      <div class="offline__image-wrapper">
+        <h1 class="offline__title">Aucune connexion Internet</h1>
+        <img src="image/1400x780-chaise-mur.jpg" alt="Photo de plusieurs chaises fixées au mur" class="offline__image" />
+      </div>
+
+      <h2 class="offline__subtitle">Vous êtes hors ligne</h2>
+      <p class="offline__text">La page demandée n’est pas disponible sans connexion Internet. Mais voici un aperçu de qui nous sommes</p>
+
+      <h2 class="offline__subtitle">Qui nous sommes</h2>
+
+      <p class="offline__text">Nous sommes une boutique indépendante basée à Québec, passionnée par l’art de bien faire les choses. Depuis nos débuts, nous mettons en avant des produits de qualité, un service personnalisé et une expérience client unique.</p>
+      <p class="offline__text">Que vous veniez pour découvrir de nouvelles inspirations, trouver des articles originaux ou simplement discuter avec nous, notre équipe est toujours là pour vous accueillir avec le sourire.</p>
+      <p class="offline__text">Nous croyons en la proximité, la créativité et l’importance de soutenir l’économie locale. Chaque projet que nous réalisons est pensé pour durer et pour refléter les valeurs qui nous animent : authenticité, passion et souci du détail.</p>
+
+      <h2 class="offline__subtitle">Notre adresse</h2>
+      <p class="offline__text">9 rue Courcelette, Québec, QC G1N 3B9</p>
+
+      <a href="tel:+14186814101" class="offline__button">418-681-4101</a>
+
+      <h2 class="offline__subtitle">Revenez vite !</h2>
+      <p class="offline__text">Dès que votre connexion sera rétablie, vous pourrez explorer toutes nos pages et découvrir nos dernières nouveautés en ligne.</p>
+
+      <a href="index.html" class="offline__button">Retour à l’accueil</a>
     </div>
-
-    <h2>Vous êtes hors ligne</h2>
-    <p>La page demandée n’est pas disponible sans connexion Internet. Mais voici un aperçu de qui nous sommes</p>
-
-    <h2>Qui nous sommes</h2>
-    <p>Nous sommes une boutique indépendante basée à Québec, passionnée par l’art de bien faire les choses. Depuis nos débuts, nous mettons en avant des produits de qualité, un service personnalisé et une expérience client unique.</p>
-    <p>Que vous veniez pour découvrir de nouvelles inspirations, trouver des articles originaux ou simplement discuter avec nous, notre équipe est toujours là pour vous accueillir avec le sourire.</p>
-    <p>Nous croyons en la proximité, la créativité et l’importance de soutenir l’économie locale. Chaque projet que nous réalisons est pensé pour durer et pour refléter les valeurs qui nous animent : authenticité, passion et souci du détail.</p>
-
-    <h2>Notre adresse</h2>
-    <p>
-      9 rue Courcelette, Québec, QC G1N 3B9 <br />
-      <a href="tel:+14186814101">418-681-4101</a>
-    </p>
-
-    <h2>Revenez vite !</h2>
-    <p>Dès que votre connexion sera rétablie, vous pourrez explorer toutes nos pages et découvrir nos dernières nouveautés en ligne.</p>
-
-    <a href="index.html">Retour à l’accueil</a>
   </body>
 </html>
