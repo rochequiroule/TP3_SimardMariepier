@@ -36,7 +36,6 @@ const FILES_TO_CACHE = [
   "/TP3_SimardMariepier/image/realisation_06-v.jpg",
   "/TP3_SimardMariepier/image/realisation_06.jpg",
   "/TP3_SimardMariepier/image/ReBois_logo.svg",
-  "/TP3_SimardMariepier/video/4480575-hd_1920_1080_30fps.mp4",
 ];
 
 // INSTALL
